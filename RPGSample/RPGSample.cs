@@ -34,7 +34,7 @@ namespace RPGSample
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            graphics.IsFullScreen = false;
+            graphics.IsFullScreen = true;
             graphics.ApplyChanges();
             base.Initialize();
         }
