@@ -89,6 +89,7 @@ namespace RPGSample
             InputManager.Update();
             base.Update(gameTime);
         }
+        MainMenuScreen mainMenu;
         //after update value then draw content
         protected override void Draw(GameTime gameTime)
         {            
@@ -126,7 +127,8 @@ namespace RPGSample
                         {
                             if (screenManager.GetScreens().Length == 0)
                             {
-                                screenManager.AddScreen(new MainMenuScreen());
+                                mainMenu = new MainMenuScreen();
+                                screenManager.AddScreen(mainMenu);
                                 return;
                             }
                         }

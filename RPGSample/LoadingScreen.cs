@@ -46,9 +46,9 @@ namespace RPGSample
         public override void LoadContent()
         {
             ContentManager content = ScreenManager.Game.Content;
-            loadingTexture = content.Load<Texture2D>(@"Textures\MainMenu\LoadingPause");
+            loadingTexture = content.Load<Texture2D>(@"Texture\MainMenu\LoadingPause");
             loadingBlackTexture =
-                content.Load<Texture2D>(@"Textures\GameScreens\FadeScreen");
+                content.Load<Texture2D>(@"Texture\GameScreens\FadeScreen");
             Viewport viewport = ScreenManager.GraphicsDevice.Viewport;
             loadingBlackTextureDestination = new Rectangle(viewport.X, viewport.Y,
                 viewport.Width, viewport.Height);

@@ -89,17 +89,42 @@ namespace RPGSample
 
         private void SaveGameMenuEntrySelected(object sender, EventArgs e)
         {
-            
+            ScreenManager.AddScreen(
+                new SaveLoadScreen(SaveLoadScreen.SaveLoadScreenMode.Save));
         }
 
         private void NewGameMenuEntrySelected(object sender, EventArgs e)
         {
-            
+            if (Session.IsActive)
+            {
+                ExitScreen();
+            }
+
+            ContentManager content = ScreenManager.Game.Content;
+            LoadingScreen.Load(ScreenManager, true, new GameplayScreen(new GameStartDescription() {
+                MapContentName= "Map001",
+                PlayerContentNames=new System.Collections.Generic.List<string>() { "Kolatt"},
+                QuestLineContentName="MainQuestLine"
+            }));
         }
 
         private void LoadGameMenuEntrySelected(object sender, EventArgs e)
         {
-            
+            SaveLoadScreen loadGameScreen =
+    new SaveLoadScreen(SaveLoadScreen.SaveLoadScreenMode.Load);
+            loadGameScreen.LoadingSaveGame += new SaveLoadScreen.LoadingSaveGameHandler(
+                loadGameScreen_LoadingSaveGame);
+            ScreenManager.AddScreen(loadGameScreen);
+        }
+
+        private void loadGameScreen_LoadingSaveGame(SaveGameDescription saveGameDescription)
+        {
+            if (Session.IsActive)
+            {
+                ExitScreen();
+            }
+            LoadingScreen.Load(ScreenManager, true,
+                new GameplayScreen(saveGameDescription));
         }
 
         private void ControlsMenuEntrySelected(object sender, EventArgs e)
