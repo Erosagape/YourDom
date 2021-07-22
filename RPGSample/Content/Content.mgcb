@@ -262,11 +262,6 @@
 /processorParam:TextureFormat=Compressed
 /build:Fonts/Title.spritefont
 
-#begin StartGameDescription.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:StartGameDescription.xml
-
 #begin Texture/Buttons/AButton.png
 /importer:TextureImporter
 /processor:TextureProcessor

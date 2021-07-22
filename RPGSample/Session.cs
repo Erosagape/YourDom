@@ -112,7 +112,7 @@ namespace RPGSample
         public static void StartNewSession(GameStartDescription gameStartDescription,
             ScreenManager screenManager, GameplayScreen gameplayScreen)
         {
-            /*
+            
             // check the parameters
             if (gameStartDescription == null)
             {
@@ -134,8 +134,8 @@ namespace RPGSample
             singleton = new Session(screenManager, gameplayScreen);
 
             // set up the initial map
-            ChangeMap(gameStartDescription.MapContentName, null);
-
+            //ChangeMap(gameStartDescription.MapContentName, null);
+            /*
             // set up the initial party
             ContentManager content = singleton.screenManager.Game.Content;
             singleton.party = new Party(gameStartDescription, content);

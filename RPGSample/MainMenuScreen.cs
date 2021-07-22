@@ -26,6 +26,7 @@ namespace RPGSample
         MenuEntry newGameMenuEntry, exitGameMenuEntry;
         MenuEntry saveGameMenuEntry, loadGameMenuEntry;
         MenuEntry controlsMenuEntry, helpMenuEntry;
+
         public MainMenuScreen()
             : base()
         {
@@ -89,8 +90,7 @@ namespace RPGSample
 
         private void SaveGameMenuEntrySelected(object sender, EventArgs e)
         {
-            ScreenManager.AddScreen(
-                new SaveLoadScreen(SaveLoadScreen.SaveLoadScreenMode.Save));
+            ScreenManager.AddScreen(new SaveLoadScreen(SaveLoadScreen.SaveLoadScreenMode.Save));
         }
 
         private void NewGameMenuEntrySelected(object sender, EventArgs e)
@@ -100,20 +100,20 @@ namespace RPGSample
                 ExitScreen();
             }
 
-            ContentManager content = ScreenManager.Game.Content;
-            LoadingScreen.Load(ScreenManager, true, new GameplayScreen(new GameStartDescription() {
-                MapContentName= "Map001",
-                PlayerContentNames=new System.Collections.Generic.List<string>() { "Kolatt"},
-                QuestLineContentName="MainQuestLine"
-            }));
+            ContentManager content = ScreenManager.Game.Content;            
+            var startGameDesc = new XmlManager<GameStartDescription>("Content/GameData/StartGame.xml").Get();
+            if (startGameDesc == null)
+            {
+                ExitScreen();
+            }
+
+            LoadingScreen.Load(ScreenManager, true, new GameplayScreen(startGameDesc));
         }
 
         private void LoadGameMenuEntrySelected(object sender, EventArgs e)
         {
-            SaveLoadScreen loadGameScreen =
-    new SaveLoadScreen(SaveLoadScreen.SaveLoadScreenMode.Load);
-            loadGameScreen.LoadingSaveGame += new SaveLoadScreen.LoadingSaveGameHandler(
-                loadGameScreen_LoadingSaveGame);
+            SaveLoadScreen loadGameScreen = new SaveLoadScreen(SaveLoadScreen.SaveLoadScreenMode.Load);
+            loadGameScreen.LoadingSaveGame += new SaveLoadScreen.LoadingSaveGameHandler(loadGameScreen_LoadingSaveGame);
             ScreenManager.AddScreen(loadGameScreen);
         }
 
@@ -147,8 +147,7 @@ namespace RPGSample
             string message = String.Empty;
             if (Session.IsActive)
             {
-                message =
-                    "Are you sure you want to exit?  All unsaved progress will be lost.";
+                message = "Are you sure you want to exit?  All unsaved progress will be lost.";
             }
             else
             {
@@ -192,6 +191,7 @@ namespace RPGSample
             iconPosition = backgroundPosition + new Vector2(170, 80);
             backPosition = backgroundPosition + new Vector2(225, 610);
             selectPosition = backgroundPosition + new Vector2(1120, 610);
+
             // set the textures on each menu entry
             newGameMenuEntry.Texture = plankTexture3;
 
