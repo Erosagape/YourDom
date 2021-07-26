@@ -27,6 +27,7 @@
     <None Remove="GameClass\Map\" />
     <None Remove="GameClass\Combat\" />
     <None Remove="GameClass\Quest\" />
+    <None Remove="Content\Texture\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
@@ -75,5 +76,6 @@
     <Folder Include="GameClass\Map\" />
     <Folder Include="GameClass\Combat\" />
     <Folder Include="GameClass\Quest\" />
+    <Folder Include="Content\Texture\" />
   </ItemGroup>
 </Project>

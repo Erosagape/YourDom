@@ -833,7 +833,41 @@ namespace RPGSample
             // retrieve the storage device, asynchronously
             //GetStorageDevice(RefreshSaveGameDescriptionsResult);
         }
+        /// <summary>
+        /// Change the current map, arriving at the given portal if any.
+        /// </summary>
+        /// <param name="contentName">The asset name of the new map.</param>
+        /// <param name="originalPortal">The portal from the previous map.</param>
+        public static void ChangeMap(string contentName, Portal originalPortal)
+        {
+            // make sure the content name is valid
+            string mapContentName = contentName;
+            if (!mapContentName.StartsWith(@"Maps\"))
+            {
+                mapContentName = Path.Combine(@"Maps", mapContentName);
+            }
 
+            // check for trivial movement - typically intra-map portals
+            if ((TileEngine.Map != null) && (TileEngine.Map.AssetName == mapContentName))
+            {
+                TileEngine.SetMap(TileEngine.Map, originalPortal == null ? null :
+                    TileEngine.Map.FindPortal(originalPortal.DestinationMapPortalName));
+            }
+
+            // load the map
+            ContentManager content = singleton.screenManager.Game.Content;
+            Map map = content.Load<Map>(mapContentName).Clone() as Map;
+
+            // modify the map based on the world changes (removed chests, etc.).
+            singleton.ModifyMap(map);
+
+            // start playing the music for the new map
+            AudioManager.PlayMusic(map.MusicCueName);
+
+            // set the new map into the tile engine
+            TileEngine.SetMap(map, originalPortal == null ? null :
+                map.FindPortal(originalPortal.DestinationMapPortalName));
+        }
         /// <summary>
         /// Start a new session based on the data provided.
         /// </summary>
@@ -862,8 +896,8 @@ namespace RPGSample
             singleton = new Session(screenManager, gameplayScreen);
 
             // set up the initial map
-            //ChangeMap(gameStartDescription.MapContentName, null);
-            /*
+            ChangeMap(gameStartDescription.MapContentName, null);
+            
             // set up the initial party
             ContentManager content = singleton.screenManager.Game.Content;
             singleton.party = new Party(gameStartDescription, content);
@@ -872,7 +906,7 @@ namespace RPGSample
             singleton.questLine = content.Load<QuestLine>(
                 Path.Combine(@"Quests\QuestLines",
                 gameStartDescription.QuestLineContentName)).Clone() as QuestLine;
-            */
+            
         }
         /// <summary>
         /// Start a new session, using the data in the given save game.
