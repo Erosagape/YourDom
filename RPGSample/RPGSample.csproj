@@ -14,6 +14,19 @@
     <None Remove="Icon.bmp" />
     <None Remove="Content\File.xml" />
     <None Remove="Content\GameData\" />
+    <None Remove="UnitTest\" />
+    <None Remove="Engine\" />
+    <None Remove="GameClass\" />
+    <None Remove="GameScreen\" />
+    <None Remove="DataClass\" />
+    <None Remove="GameClass\Animation\" />
+    <None Remove="GameClass\Equipment\" />
+    <None Remove="GameClass\Character\" />
+    <None Remove="GameClass\Statistics\" />
+    <None Remove="GameClass\Screens\" />
+    <None Remove="GameClass\Map\" />
+    <None Remove="GameClass\Combat\" />
+    <None Remove="GameClass\Quest\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
@@ -48,5 +61,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\GameData\" />
+    <Folder Include="UnitTest\" />
+    <Folder Include="GameEngine\" />
+    <Folder Include="CommonClass\" />
+    <Folder Include="GameScreen\" />
+    <Folder Include="DataClass\" />
+    <Folder Include="GameClass\" />
+    <Folder Include="GameClass\Animation\" />
+    <Folder Include="GameClass\Equipment\" />
+    <Folder Include="GameClass\Character\" />
+    <Folder Include="GameClass\Statistics\" />
+    <Folder Include="GameClass\Screen\" />
+    <Folder Include="GameClass\Map\" />
+    <Folder Include="GameClass\Combat\" />
+    <Folder Include="GameClass\Quest\" />
   </ItemGroup>
 </Project>
