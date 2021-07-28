@@ -137,7 +137,7 @@ namespace RPGSample
             ScreenManager.AddScreen(new HelpScreen());
         }
 
-        private void OnCancel(object sender, EventArgs e)
+        private new void OnCancel(object sender, EventArgs e)
         {
             ExitGameScreen();
         }

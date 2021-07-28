@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace RPGSample
 {
-    public class Screen1 : GameScreen
+    class Screen1 : MenuScreen
     {
         MenuEntry startMenu;
         string captionText;
