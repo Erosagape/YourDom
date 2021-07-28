@@ -1,4 +1,6 @@
 ﻿using System;
+using Microsoft.Xna.Framework.Content;
+
 namespace RPGSample
 {
     public class GearDrop
@@ -31,6 +33,25 @@ namespace RPGSample
             get { return dropPercentage; }
             set { dropPercentage = (value > 100 ? 100 : (value < 0 ? 0 : value)); }
         }
+        /// <summary>
+        /// Read a GearDrop object from the content pipeline.
+        /// </summary>
+        public class GearDropReader : ContentTypeReader<GearDrop>
+        {
+            protected override GearDrop Read(ContentReader input,
+                GearDrop existingInstance)
+            {
+                GearDrop gearDrop = existingInstance;
+                if (gearDrop == null)
+                {
+                    gearDrop = new GearDrop();
+                }
 
+                gearDrop.GearName = input.ReadString();
+                gearDrop.DropPercentage = input.ReadInt32();
+
+                return gearDrop;
+            }
+        }
     }
 }

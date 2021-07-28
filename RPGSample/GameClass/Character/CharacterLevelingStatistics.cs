@@ -1,4 +1,6 @@
 ﻿using System;
+using Microsoft.Xna.Framework.Content;
+
 namespace RPGSample
 {
     public struct CharacterLevelingStatistics
@@ -67,5 +69,36 @@ namespace RPGSample
         /// The number of levels between each magical defense increase.
         /// </summary>
         public Int32 LevelsPerMagicalDefenseIncrease;
+        /// <summary>
+        /// Reads a CharacterLevelingStatistics object from the content pipeline.
+        /// </summary>
+        public class CharacterLevelingStatisticsReader :
+            ContentTypeReader<CharacterLevelingStatistics>
+        {
+            /// <summary>
+            /// Reads a CharacterLevelingStatistics object from the content pipeline.
+            /// </summary>
+            protected override CharacterLevelingStatistics Read(ContentReader input,
+                CharacterLevelingStatistics existingInstance)
+            {
+                CharacterLevelingStatistics stats = existingInstance;
+
+                stats.HealthPointsIncrease = input.ReadInt32();
+                stats.MagicPointsIncrease = input.ReadInt32();
+                stats.PhysicalOffenseIncrease = input.ReadInt32();
+                stats.PhysicalDefenseIncrease = input.ReadInt32();
+                stats.MagicalOffenseIncrease = input.ReadInt32();
+                stats.MagicalDefenseIncrease = input.ReadInt32();
+
+                stats.LevelsPerHealthPointsIncrease = input.ReadInt32();
+                stats.LevelsPerMagicPointsIncrease = input.ReadInt32();
+                stats.LevelsPerPhysicalOffenseIncrease = input.ReadInt32();
+                stats.LevelsPerPhysicalDefenseIncrease = input.ReadInt32();
+                stats.LevelsPerMagicalOffenseIncrease = input.ReadInt32();
+                stats.LevelsPerMagicalDefenseIncrease = input.ReadInt32();
+
+                return stats;
+            }
+        }
     }
 }

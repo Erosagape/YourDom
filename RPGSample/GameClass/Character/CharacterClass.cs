@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework.Content;
 
 namespace RPGSample
 {
@@ -189,6 +190,38 @@ namespace RPGSample
         {
             get { return baseGoldValue; }
             set { baseGoldValue = value; }
+        }
+        /// <summary>
+        /// Reads a CharacterClass object from the content pipeline.
+        /// </summary>
+        public class CharacterClassReader : ContentTypeReader<CharacterClass>
+        {
+            /// <summary>
+            /// Reads a CharacterClass object from the content pipeline.
+            /// </summary>
+            protected override CharacterClass Read(ContentReader input,
+                CharacterClass existingInstance)
+            {
+                CharacterClass characterClass = existingInstance;
+                if (characterClass == null)
+                {
+                    characterClass = new CharacterClass();
+                }
+
+                characterClass.AssetName = input.AssetName;
+
+                characterClass.Name = input.ReadString();
+                characterClass.InitialStatistics =
+                    input.ReadObject<StatisticsValue>();
+                characterClass.LevelingStatistics =
+                    input.ReadObject<CharacterLevelingStatistics>();
+                characterClass.LevelEntries.AddRange(
+                    input.ReadObject<List<CharacterLevelDescription>>());
+                characterClass.BaseExperienceValue = input.ReadInt32();
+                characterClass.BaseGoldValue = input.ReadInt32();
+
+                return characterClass;
+            }
         }
     }
 }

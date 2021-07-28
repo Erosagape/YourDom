@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 
 namespace RPGSample
 {
@@ -60,6 +61,32 @@ namespace RPGSample
         {
             get { return destinationMapPortalName; }
             set { destinationMapPortalName = value; }
+        }
+
+        /// <summary>
+        /// Reads a Portal object from the content pipeline.
+        /// </summary>
+        public class PortalReader : ContentTypeReader<Portal>
+        {
+            protected override Portal Read(ContentReader input,
+                Portal existingInstance)
+            {
+                Portal portal = existingInstance;
+                if (portal == null)
+                {
+                    portal = new Portal();
+                }
+
+                portal.AssetName = input.AssetName;
+
+                portal.Name = input.ReadString();
+
+                portal.LandingMapPosition = input.ReadObject<Point>();
+                portal.DestinationMapContentName = input.ReadString();
+                portal.DestinationMapPortalName = input.ReadString();
+
+                return portal;
+            }
         }
     }
 }

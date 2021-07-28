@@ -83,6 +83,29 @@ namespace RPGSample
             get { return mapSprite; }
             set { mapSprite = value; }
         }
+        /// <summary>
+        /// Read a MapEntry object from the content pipeline.
+        /// </summary>
+        public class MapEntryReader : ContentTypeReader<MapEntry<T>>
+        {
+            /// <summary>
+            /// Read a MapEntry object from the content pipeline.
+            /// </summary>
+            protected override MapEntry<T> Read(ContentReader input,
+                MapEntry<T> existingInstance)
+            {
+                MapEntry<T> desc = existingInstance;
+                if (desc == null)
+                {
+                    desc = new MapEntry<T>();
+                }
 
+                input.ReadRawObject<ContentEntry<T>>(desc as ContentEntry<T>);
+                desc.MapPosition = input.ReadObject<Point>();
+                desc.Direction = (Direction)input.ReadInt32();
+
+                return desc;
+            }
+        }
     }
 }

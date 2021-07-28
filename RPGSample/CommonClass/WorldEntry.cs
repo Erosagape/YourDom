@@ -1,4 +1,6 @@
 ﻿using System;
+using Microsoft.Xna.Framework.Content;
+
 namespace RPGSample
 {
     public class WorldEntry<T> : MapEntry<T> where T: ContentObject
@@ -15,6 +17,29 @@ namespace RPGSample
         {
             get { return mapContentName; }
             set { mapContentName = value; }
+        }
+        /// <summary>
+        /// Reads a WorldEntry object from the content pipeline.
+        /// </summary>
+        public class WorldEntryReader : ContentTypeReader<WorldEntry<T>>
+        {
+            /// <summary>
+            /// Reads a WorldEntry object from the content pipeline.
+            /// </summary>
+            protected override WorldEntry<T> Read(ContentReader input,
+                WorldEntry<T> existingInstance)
+            {
+                WorldEntry<T> desc = existingInstance;
+                if (desc == null)
+                {
+                    desc = new WorldEntry<T>();
+                }
+
+                input.ReadRawObject<MapEntry<T>>(desc as MapEntry<T>);
+                desc.MapContentName = input.ReadString();
+
+                return desc;
+            }
         }
     }
 }

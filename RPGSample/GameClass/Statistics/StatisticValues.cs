@@ -261,5 +261,22 @@ namespace RPGSample
 
             return sb.ToString();
         }
+        public class StatisticsValueReader : ContentTypeReader<StatisticsValue>
+        {
+            protected override StatisticsValue Read(ContentReader input,
+                StatisticsValue existingInstance)
+            {
+                StatisticsValue output = new StatisticsValue();
+
+                output.HealthPoints = input.ReadInt32();
+                output.MagicPoints = input.ReadInt32();
+                output.PhysicalOffense = input.ReadInt32();
+                output.PhysicalDefense = input.ReadInt32();
+                output.MagicalOffense = input.ReadInt32();
+                output.MagicalDefense = input.ReadInt32();
+
+                return output;
+            }
+        }
     }
 }

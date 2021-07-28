@@ -101,7 +101,7 @@ namespace RPGSample
             }
 
             ContentManager content = ScreenManager.Game.Content;            
-            var startGameDesc = new XmlManager<GameStartDescription>("Content/GameData/StartGame.xml").Get();
+            var startGameDesc = new XmlManager<GameStartDescription>("StartGame").Get();
             if (startGameDesc == null)
             {
                 ExitScreen();

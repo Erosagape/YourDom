@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using Microsoft.Xna.Framework.Content;
 
 namespace RPGSample
 {
@@ -151,6 +152,22 @@ namespace RPGSample
             sb.Append(')');
 
             return sb.ToString();
+        }
+        /// <summary>
+        /// Read an Int32Range object from the content pipeline.
+        /// </summary>
+        public class Int32RangeReader : ContentTypeReader<Int32Range>
+        {
+            protected override Int32Range Read(ContentReader input,
+                Int32Range existingInstance)
+            {
+                Int32Range output = existingInstance;
+
+                output.Minimum = input.ReadInt32();
+                output.Maximum = input.ReadInt32();
+
+                return output;
+            }
         }
     }
 }

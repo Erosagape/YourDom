@@ -1,4 +1,6 @@
 ﻿using System;
+using Microsoft.Xna.Framework.Content;
+
 namespace RPGSample
 {
     public class Armor : Equipment
@@ -65,6 +67,30 @@ namespace RPGSample
             get { return ownerMagicDefenseRange; }
             set { ownerMagicDefenseRange = value; }
         }
+        /// <summary>
+        /// Read the Weapon type from the content pipeline.
+        /// </summary>
+        public class ArmorReader : ContentTypeReader<Armor>
+        {
+            protected override Armor Read(ContentReader input, Armor existingInstance)
+            {
+                Armor armor = existingInstance;
 
+                if (armor == null)
+                {
+                    armor = new Armor();
+                }
+
+                // read the gear settings
+                input.ReadRawObject<Equipment>(armor as Equipment);
+
+                // read armor settings
+                armor.Slot = (ArmorSlot)input.ReadInt32();
+                armor.OwnerHealthDefenseRange = input.ReadObject<Int32Range>();
+                armor.OwnerMagicDefenseRange = input.ReadObject<Int32Range>();
+
+                return armor;
+            }
+        }
     }
 }

@@ -88,5 +88,32 @@ namespace RPGSample
         {
             get { return shopkeeperTexture; }
         }
+        /// <summary>
+        /// Reads an Inn object from the content pipeline.
+        /// </summary>
+        public class InnReader : ContentTypeReader<Inn>
+        {
+            protected override Inn Read(ContentReader input, Inn existingInstance)
+            {
+                Inn inn = existingInstance;
+                if (inn == null)
+                {
+                    inn = new Inn();
+                }
+
+                input.ReadRawObject<WorldObject>(inn as WorldObject);
+
+                inn.ChargePerPlayer = input.ReadInt32();
+                inn.WelcomeMessage = input.ReadString();
+                inn.PaidMessage = input.ReadString();
+                inn.NotEnoughGoldMessage = input.ReadString();
+                inn.ShopkeeperTextureName = input.ReadString();
+                inn.shopkeeperTexture = input.ContentManager.Load<Texture2D>(
+                    System.IO.Path.Combine(@"Textures\Characters\Portraits",
+                    inn.ShopkeeperTextureName));
+
+                return inn;
+            }
+        }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using Microsoft.Xna.Framework.Content;
 
 namespace RPGSample
 {
@@ -17,6 +19,37 @@ namespace RPGSample
         {
             get { return entries; }
             set { entries = value; }
+        }
+        /// <summary>
+        /// Reads a FixedCombat object from the content pipeline.
+        /// </summary>
+        public class FixedCombatReader : ContentTypeReader<FixedCombat>
+        {
+            /// <summary>
+            /// Reads a FixedCombat object from the content pipeline.
+            /// </summary>
+            protected override FixedCombat Read(ContentReader input,
+                FixedCombat existingInstance)
+            {
+                FixedCombat fixedCombat = existingInstance;
+                if (fixedCombat == null)
+                {
+                    fixedCombat = new FixedCombat();
+                }
+
+                input.ReadRawObject<WorldObject>(fixedCombat as WorldObject);
+
+                fixedCombat.Entries.AddRange(
+                    input.ReadObject<List<ContentEntry<Monster>>>());
+                foreach (ContentEntry<Monster> fixedCombatEntry in fixedCombat.Entries)
+                {
+                    fixedCombatEntry.Content = input.ContentManager.Load<Monster>(
+                        Path.Combine(@"Characters\Monsters",
+                            fixedCombatEntry.ContentName));
+                }
+
+                return fixedCombat;
+            }
         }
     }
 }

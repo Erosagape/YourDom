@@ -23,7 +23,7 @@ namespace RPGSample
         }
         public T Load(string path)
         {
-            using (TextReader reader = new StreamReader(path))
+            using (TextReader reader = new StreamReader("Content/GameData/"+ path + ".xml"))
             {
                 XmlSerializer xml = new XmlSerializer(Type);
                 instance = (T)xml.Deserialize(reader);

@@ -166,6 +166,56 @@ namespace RPGSample
             get { return unselectablePortraitTexture; }
         }
 
+
+        #region Content Type Reader
+
+
+        /// <summary>
+        /// Read a Player object from the content pipeline.
+        /// </summary>
+        public class PlayerReader : ContentTypeReader<Player>
+        {
+            protected override Player Read(ContentReader input, Player existingInstance)
+            {
+                Player player = existingInstance;
+                if (player == null)
+                {
+                    player = new Player();
+                }
+
+                input.ReadRawObject<FightingCharacter>(player as FightingCharacter);
+
+                player.Gold = input.ReadInt32();
+                player.IntroductionDialogue = input.ReadString();
+                player.JoinAcceptedDialogue = input.ReadString();
+                player.JoinRejectedDialogue = input.ReadString();
+                player.ActivePortraitTextureName = input.ReadString();
+                player.activePortraitTexture =
+                    input.ContentManager.Load<Texture2D>(
+                        System.IO.Path.Combine(@"Textures\Characters\Portraits",
+                        player.ActivePortraitTextureName));
+                player.InactivePortraitTextureName = input.ReadString();
+                player.inactivePortraitTexture =
+                    input.ContentManager.Load<Texture2D>(
+                        System.IO.Path.Combine(@"Textures\Characters\Portraits",
+                        player.InactivePortraitTextureName));
+                player.UnselectablePortraitTextureName = input.ReadString();
+                player.unselectablePortraitTexture =
+                    input.ContentManager.Load<Texture2D>(
+                        System.IO.Path.Combine(@"Textures\Characters\Portraits",
+                        player.UnselectablePortraitTextureName));
+
+                return player;
+            }
+        }
+
+
+        #endregion
+
+
+        #region ICloneable Members
+
+
         public object Clone()
         {
             Player player = new Player();
@@ -208,5 +258,8 @@ namespace RPGSample
 
             return player;
         }
+
+
+        #endregion
     }
 }

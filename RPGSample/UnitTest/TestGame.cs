@@ -1,11 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 namespace RPGSample
 {
-    public class TestScreen : Game
+    public class TestGame : Game
     {
         ScreenManager screenManager;
         GraphicsDeviceManager graphics;
-        public TestScreen()
+        public TestGame()
         {
             screenManager = new ScreenManager(this);
             graphics = new GraphicsDeviceManager(this);

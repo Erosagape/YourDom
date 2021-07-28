@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using Microsoft.Xna.Framework.Content;
 
 namespace RPGSample
 {
@@ -65,6 +67,35 @@ namespace RPGSample
         {
             get { return entries; }
             set { entries = value; }
+        }
+        /// <summary>
+        /// Reads a RandomCombat object from the content pipeline.
+        /// </summary>
+        public class RandomCombatReader : ContentTypeReader<RandomCombat>
+        {
+            protected override RandomCombat Read(ContentReader input,
+                RandomCombat existingInstance)
+            {
+                RandomCombat randomCombat = existingInstance;
+                if (randomCombat == null)
+                {
+                    randomCombat = new RandomCombat();
+                }
+
+                randomCombat.CombatProbability = input.ReadInt32();
+                randomCombat.FleeProbability = input.ReadInt32();
+                randomCombat.MonsterCountRange = input.ReadObject<Int32Range>();
+                randomCombat.Entries.AddRange(
+                    input.ReadObject<List<WeightedContentEntry<Monster>>>());
+                foreach (ContentEntry<Monster> randomCombatEntry in randomCombat.Entries)
+                {
+                    randomCombatEntry.Content = input.ContentManager.Load<Monster>(
+                        Path.Combine(@"Characters\Monsters",
+                            randomCombatEntry.ContentName));
+                }
+
+                return randomCombat;
+            }
         }
     }
 }

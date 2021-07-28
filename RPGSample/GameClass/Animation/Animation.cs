@@ -98,6 +98,33 @@ namespace RPGSample
             this.Interval = interval;
             this.IsLoop = isLoop;
         }
+        /// <summary>
+        /// Read an Animation object from the content pipeline.
+        /// </summary>
+        public class AnimationReader : ContentTypeReader<Animation>
+        {
+            /// <summary>
+            /// Read an Animation object from the content pipeline.
+            /// </summary>
+            protected override Animation Read(ContentReader input,
+                Animation existingInstance)
+            {
+                Animation animation = existingInstance;
+                if (animation == null)
+                {
+                    animation = new Animation();
+                }
 
+                animation.AssetName = input.AssetName;
+
+                animation.Name = input.ReadString();
+                animation.StartingFrame = input.ReadInt32();
+                animation.EndingFrame = input.ReadInt32();
+                animation.Interval = input.ReadInt32();
+                animation.IsLoop = input.ReadBoolean();
+
+                return animation;
+            }
+        }
     }
 }

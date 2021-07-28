@@ -858,7 +858,8 @@ namespace RPGSample
             ContentManager content = singleton.screenManager.Game.Content;
             Map map = content.Load<Map>(mapContentName).Clone() as Map;
 
-            // modify the map based on the world changes (removed chests, etc.).
+
+                // modify the map based on the world changes (removed chests, etc.).
             singleton.ModifyMap(map);
 
             // start playing the music for the new map

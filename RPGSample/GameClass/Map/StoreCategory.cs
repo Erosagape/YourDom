@@ -50,6 +50,36 @@ namespace RPGSample
             get { return availableGear; }
             set { availableGear = value; }
         }
+        /// <summary>
+        /// Reads a StoreCategory object from the content pipeline.
+        /// </summary>
+        public class StoreCategoryReader : ContentTypeReader<StoreCategory>
+        {
+            /// <summary>
+            /// Reads a StoreCategory object from the content pipeline.
+            /// </summary>
+            protected override StoreCategory Read(ContentReader input,
+                StoreCategory existingInstance)
+            {
+                StoreCategory storeCategory = existingInstance;
+                if (storeCategory == null)
+                {
+                    storeCategory = new StoreCategory();
+                }
 
+                storeCategory.Name = input.ReadString();
+                storeCategory.AvailableContentNames.AddRange(
+                    input.ReadObject<List<string>>());
+
+                // populate the gear list based on the content names
+                foreach (string gearName in storeCategory.AvailableContentNames)
+                {
+                    storeCategory.AvailableGear.Add(input.ContentManager.Load<Gear>(
+                        System.IO.Path.Combine("Gear", gearName)));
+                }
+
+                return storeCategory;
+            }
+        }
     }
 }

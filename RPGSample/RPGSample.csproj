@@ -28,6 +28,7 @@
     <None Remove="GameClass\Combat\" />
     <None Remove="GameClass\Quest\" />
     <None Remove="Content\Texture\" />
+    <None Remove="Content\GameData\Map\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
@@ -59,6 +60,9 @@
     <None Update="Content\GameData\StartGame.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Content\GameData\Maps\Map001.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\GameData\" />
@@ -77,5 +81,6 @@
     <Folder Include="GameClass\Combat\" />
     <Folder Include="GameClass\Quest\" />
     <Folder Include="Content\Texture\" />
+    <Folder Include="Content\GameData\Maps\" />
   </ItemGroup>
 </Project>

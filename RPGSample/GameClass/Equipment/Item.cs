@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 
 namespace RPGSample
@@ -220,6 +221,47 @@ namespace RPGSample
             get { return overlay; }
             set { overlay = value; }
         }
+        /// <summary>
+        /// Read an Item object from the content pipeline
+        /// </summary>
+        public class ItemReader : ContentTypeReader<Item>
+        {
+            protected override Item Read(ContentReader input, Item existingInstance)
+            {
+                Item item = existingInstance;
+                if (item == null)
+                {
+                    item = new Item();
+                }
 
+                // read gear settings
+                input.ReadRawObject<Gear>(item as Gear);
+
+                // read item settings
+                item.Usage = (ItemUsage)input.ReadInt32();
+                item.IsOffensive = input.ReadBoolean();
+                item.TargetDuration = input.ReadInt32();
+                item.TargetEffectRange = input.ReadObject<StatisticsRange>();
+                item.AdjacentTargets = input.ReadInt32();
+                item.UsingCueName = input.ReadString();
+                item.TravelingCueName = input.ReadString();
+                item.ImpactCueName = input.ReadString();
+                item.BlockCueName = input.ReadString();
+                item.CreationSprite = input.ReadObject<AnimatingSprite>();
+                item.CreationSprite.SourceOffset = new Vector2(
+                    item.CreationSprite.FrameDimensions.X / 2,
+                    item.CreationSprite.FrameDimensions.Y);
+                item.SpellSprite = input.ReadObject<AnimatingSprite>();
+                item.SpellSprite.SourceOffset = new Vector2(
+                    item.SpellSprite.FrameDimensions.X / 2,
+                    item.SpellSprite.FrameDimensions.Y);
+                item.Overlay = input.ReadObject<AnimatingSprite>();
+                item.Overlay.SourceOffset = new Vector2(
+                    item.Overlay.FrameDimensions.X / 2,
+                    item.Overlay.FrameDimensions.Y);
+
+                return item;
+            }
+        }
     }
 }

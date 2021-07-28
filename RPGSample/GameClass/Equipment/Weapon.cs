@@ -1,4 +1,7 @@
 ﻿using System;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
+
 namespace RPGSample
 {
     public class Weapon : Equipment
@@ -80,6 +83,39 @@ namespace RPGSample
         {
             get { return overlay; }
             set { overlay = value; }
+        }
+        /// <summary>
+        /// Read the Weapon type from the content pipeline.
+        /// </summary>
+        public class WeaponReader : ContentTypeReader<Weapon>
+        {
+            /// <summary>
+            /// Read the Weapon type from the content pipeline.
+            /// </summary>
+            protected override Weapon Read(ContentReader input, Weapon existingInstance)
+            {
+                Weapon weapon = existingInstance;
+
+                if (weapon == null)
+                {
+                    weapon = new Weapon();
+                }
+
+                // read the gear settings
+                input.ReadRawObject<Equipment>(weapon as Equipment);
+
+                // read the weapon settings
+                weapon.TargetDamageRange = input.ReadObject<Int32Range>();
+                weapon.SwingCueName = input.ReadString();
+                weapon.HitCueName = input.ReadString();
+                weapon.BlockCueName = input.ReadString();
+                weapon.Overlay = input.ReadObject<AnimatingSprite>();
+                weapon.Overlay.SourceOffset = new Vector2(
+                    weapon.Overlay.FrameDimensions.X / 2,
+                    weapon.Overlay.FrameDimensions.Y);
+
+                return weapon;
+            }
         }
 
     }

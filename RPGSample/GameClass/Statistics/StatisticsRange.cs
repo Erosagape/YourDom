@@ -210,6 +210,26 @@ namespace RPGSample
         {
             return Add(value1, value2);
         }
+        /// <summary>
+        /// Reads a StatisticsRange object from the content pipeline.
+        /// </summary>
+        public class StatisticsRangeReader : ContentTypeReader<StatisticsRange>
+        {
+            protected override StatisticsRange Read(ContentReader input,
+                StatisticsRange existingInstance)
+            {
+                StatisticsRange output = new StatisticsRange();
+
+                output.HealthPointsRange = input.ReadObject<Int32Range>();
+                output.MagicPointsRange = input.ReadObject<Int32Range>();
+                output.PhysicalOffenseRange = input.ReadObject<Int32Range>();
+                output.PhysicalDefenseRange = input.ReadObject<Int32Range>();
+                output.MagicalOffenseRange = input.ReadObject<Int32Range>();
+                output.MagicalDefenseRange = input.ReadObject<Int32Range>();
+
+                return output;
+            }
+        }
 
     }
 

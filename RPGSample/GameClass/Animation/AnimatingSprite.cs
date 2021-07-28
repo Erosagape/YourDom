@@ -380,5 +380,38 @@ namespace RPGSample
 
             return animatingSprite;
         }
+        /// <summary>
+        /// Read an AnimatingSprite object from the content pipeline.
+        /// </summary>
+        public class AnimatingSpriteReader : ContentTypeReader<AnimatingSprite>
+        {
+            /// <summary>
+            /// Read an AnimatingSprite object from the content pipeline.
+            /// </summary>
+            protected override AnimatingSprite Read(ContentReader input,
+                AnimatingSprite existingInstance)
+            {
+                AnimatingSprite animatingSprite = existingInstance;
+                if (animatingSprite == null)
+                {
+                    animatingSprite = new AnimatingSprite();
+                }
+
+                animatingSprite.AssetName = input.AssetName;
+
+                animatingSprite.TextureName = input.ReadString();
+                animatingSprite.Texture =
+                    input.ContentManager.Load<Texture2D>(
+                        System.IO.Path.Combine(@"Textures",
+                        animatingSprite.TextureName));
+                animatingSprite.FrameDimensions = input.ReadObject<Point>();
+                animatingSprite.FramesPerRow = input.ReadInt32();
+                animatingSprite.SourceOffset = input.ReadObject<Vector2>();
+                animatingSprite.Animations.AddRange(
+                    input.ReadObject<List<Animation>>());
+
+                return animatingSprite;
+            }
+        }
     }
 }

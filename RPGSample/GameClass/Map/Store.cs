@@ -91,6 +91,33 @@ namespace RPGSample
         {
             get { return shopkeeperTexture; }
         }
+        /// <summary>
+        /// Reads an Store object from the content pipeline.
+        /// </summary>
+        public class StoreReader : ContentTypeReader<Store>
+        {
+            protected override Store Read(ContentReader input, Store existingInstance)
+            {
+                Store store = existingInstance;
+                if (store == null)
+                {
+                    store = new Store();
+                }
+
+                input.ReadRawObject<WorldObject>(store as WorldObject);
+
+                store.BuyMultiplier = input.ReadSingle();
+                store.SellMultiplier = input.ReadSingle();
+                store.StoreCategories.AddRange(input.ReadObject<List<StoreCategory>>());
+                store.WelcomeMessage = input.ReadString();
+                store.ShopkeeperTextureName = input.ReadString();
+                store.shopkeeperTexture = input.ContentManager.Load<Texture2D>(
+                    System.IO.Path.Combine(@"Textures\Characters\Portraits",
+                    store.ShopkeeperTextureName));
+
+                return store;
+            }
+        }
 
     }
 }

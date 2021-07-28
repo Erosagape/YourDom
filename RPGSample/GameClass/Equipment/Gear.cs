@@ -277,5 +277,38 @@ namespace RPGSample
             spriteBatch.DrawString(spriteFont, stringBuilder.ToString(),
                 position, color);
         }
+        /// <summary>
+        /// Reads a Gear object from the content pipeline.
+        /// </summary>
+        public class GearReader : ContentTypeReader<Gear>
+        {
+            /// <summary>
+            /// Reads a Gear object from the content pipeline.
+            /// </summary>
+            protected override Gear Read(ContentReader input, Gear existingInstance)
+            {
+                Gear gear = existingInstance;
+                if (gear == null)
+                {
+                    throw new ArgumentException("Unable to create new Gear objects.");
+                }
+
+                gear.AssetName = input.AssetName;
+
+                // read gear settings
+                gear.Name = input.ReadString();
+                gear.Description = input.ReadString();
+                gear.GoldValue = input.ReadInt32();
+                gear.IsDroppable = input.ReadBoolean();
+                gear.MinimumCharacterLevel = input.ReadInt32();
+                gear.SupportedClasses.AddRange(input.ReadObject<List<string>>());
+                gear.IconTextureName = input.ReadString();
+                gear.iconTexture = input.ContentManager.Load<Texture2D>(
+                    System.IO.Path.Combine(@"Textures\Gear", gear.IconTextureName));
+
+                return gear;
+            }
+        }
+
     }
 }

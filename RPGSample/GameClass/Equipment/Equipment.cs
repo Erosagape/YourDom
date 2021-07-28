@@ -21,5 +21,33 @@ namespace RPGSample
             get { return ownerBuffStatistics; }
             set { ownerBuffStatistics = value; }
         }
+        /// <summary>
+        /// Read the Equipment type from the content pipeline.
+        /// </summary>
+        public class EquipmentReader : ContentTypeReader<Equipment>
+        {
+            /// <summary>
+            /// Read the Equipment type from the content pipeline.
+            /// </summary>
+            protected override Equipment Read(ContentReader input,
+                Equipment existingInstance)
+            {
+                Equipment equipment = existingInstance;
+
+                if (equipment == null)
+                {
+                    throw new ArgumentException(
+                        "Unable to create new Equipment objects.");
+                }
+
+                // read the gear settings
+                input.ReadRawObject<Gear>(equipment as Gear);
+
+                // read the equipment settings
+                equipment.OwnerBuffStatistics = input.ReadObject<StatisticsValue>();
+
+                return equipment;
+            }
+        }
     }
 }

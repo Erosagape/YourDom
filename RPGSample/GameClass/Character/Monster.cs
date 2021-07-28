@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework.Content;
 
 namespace RPGSample
 {
@@ -65,6 +66,27 @@ namespace RPGSample
 
             return gearRewards;
         }
+        /// <summary>
+        /// Reads a Monster object from the content pipeline.
+        /// </summary>
+        public class MonsterReader : ContentTypeReader<Monster>
+        {
+            protected override Monster Read(ContentReader input,
+                Monster existingInstance)
+            {
+                Monster monster = existingInstance;
+                if (monster == null)
+                {
+                    monster = new Monster();
+                }
 
+                input.ReadRawObject<FightingCharacter>(monster as FightingCharacter);
+
+                monster.DefendPercentage = input.ReadInt32();
+                monster.GearDrops.AddRange(input.ReadObject<List<GearDrop>>());
+
+                return monster;
+            }
+        }
     }
 }

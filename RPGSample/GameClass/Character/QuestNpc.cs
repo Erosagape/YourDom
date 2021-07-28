@@ -1,4 +1,6 @@
 ﻿using System;
+using Microsoft.Xna.Framework.Content;
+
 namespace RPGSample
 {
     public class QuestNpc : Character
@@ -15,6 +17,27 @@ namespace RPGSample
         {
             get { return introductionDialogue; }
             set { introductionDialogue = value; }
+        }
+        /// <summary>
+        /// Read a QuestNpc object from the content pipeline.
+        /// </summary>
+        public class QuestNpcReader : ContentTypeReader<QuestNpc>
+        {
+            protected override QuestNpc Read(ContentReader input,
+                QuestNpc existingInstance)
+            {
+                QuestNpc questNpc = existingInstance;
+                if (questNpc == null)
+                {
+                    questNpc = new QuestNpc();
+                }
+
+                input.ReadRawObject<Character>(questNpc as Character);
+
+                questNpc.IntroductionDialogue = input.ReadString();
+
+                return questNpc;
+            }
         }
     }
 }

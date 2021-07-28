@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -61,7 +62,29 @@ namespace RPGSample
 
         public object Clone()
         {
-            throw new NotImplementedException();
+            Spell spell = new Spell();
+
+            spell.adjacentTargets = adjacentTargets;
+            spell.AssetName = AssetName;
+            spell.blockCueName = blockCueName;
+            spell.creatingCueName = creatingCueName;
+            spell.description = description;
+            spell.iconTexture = iconTexture;
+            spell.iconTextureName = iconTextureName;
+            spell.impactCueName = impactCueName;
+            spell.initialTargetEffectRange = initialTargetEffectRange;
+            spell.isOffensive = isOffensive;
+            spell.levelingProgression = levelingProgression;
+            spell.magicPointCost = magicPointCost;
+            spell.name = name;
+            spell.overlay = overlay.Clone() as AnimatingSprite;
+            spell.spellSprite = spellSprite.Clone() as AnimatingSprite;
+            spell.targetDuration = targetDuration;
+            spell.travelingCueName = travelingCueName;
+
+            spell.Level = Level;
+
+            return spell;
         }
 
         /// <summary>
@@ -309,6 +332,54 @@ namespace RPGSample
         {
             get { return overlay; }
             set { overlay = value; }
+        }
+        // <summary>
+        /// Read an Spell object from the content pipeline.
+        /// </summary>
+        public class SpellReader : ContentTypeReader<Spell>
+        {
+            /// <summary>
+            /// Read an Spell object from the content pipeline.
+            /// </summary>
+            protected override Spell Read(ContentReader input, Spell existingInstance)
+            {
+                Spell spell = existingInstance;
+                if (spell == null)
+                {
+                    spell = new Spell();
+                }
+
+                spell.AssetName = input.AssetName;
+
+                spell.Name = input.ReadString();
+                spell.Description = input.ReadString();
+                spell.MagicPointCost = input.ReadInt32();
+                spell.IconTextureName = input.ReadString();
+                spell.iconTexture = input.ContentManager.Load<Texture2D>(
+                    System.IO.Path.Combine(@"Textures\Spells", spell.IconTextureName));
+                spell.IsOffensive = input.ReadBoolean();
+                spell.TargetDuration = input.ReadInt32();
+                spell.targetEffectRange = spell.InitialTargetEffectRange =
+                    input.ReadObject<StatisticsRange>();
+                spell.AdjacentTargets = input.ReadInt32();
+                spell.LevelingProgression = input.ReadObject<StatisticsValue>();
+                spell.CreatingCueName = input.ReadString();
+                spell.TravelingCueName = input.ReadString();
+                spell.ImpactCueName = input.ReadString();
+                spell.BlockCueName = input.ReadString();
+                spell.SpellSprite = input.ReadObject<AnimatingSprite>();
+                spell.SpellSprite.SourceOffset = new Vector2(
+                    spell.SpellSprite.FrameDimensions.X / 2,
+                    spell.SpellSprite.FrameDimensions.Y);
+                spell.Overlay = input.ReadObject<AnimatingSprite>();
+                spell.Overlay.SourceOffset = new Vector2(
+                    spell.Overlay.FrameDimensions.X / 2,
+                    spell.Overlay.FrameDimensions.Y);
+
+                spell.Level = 1;
+
+                return spell;
+            }
         }
     }
 }
