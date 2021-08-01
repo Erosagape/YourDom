@@ -176,234 +176,142 @@
 /build:Audio/Waves/WinTheme.wav
 
 #begin CharacterClasses/Barbarian.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:CharacterClasses/Barbarian.xml
+/copy:CharacterClasses/Barbarian.xml
 
 #begin CharacterClasses/Mystic.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:CharacterClasses/Mystic.xml
+/copy:CharacterClasses/Mystic.xml
 
 #begin CharacterClasses/Paladin.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:CharacterClasses/Paladin.xml
+/copy:CharacterClasses/Paladin.xml
 
 #begin CharacterClasses/RedMage.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:CharacterClasses/RedMage.xml
+/copy:CharacterClasses/RedMage.xml
 
 #begin CharacterClasses/Warrior.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:CharacterClasses/Warrior.xml
+/copy:CharacterClasses/Warrior.xml
 
 #begin CharacterClasses/Wizard.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:CharacterClasses/Wizard.xml
+/copy:CharacterClasses/Wizard.xml
 
 #begin Characters/Monsters/BanditGuard.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/BanditGuard.xml
+/copy:Characters/Monsters/BanditGuard.xml
 
 #begin Characters/Monsters/BanditLeader.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/BanditLeader.xml
+/copy:Characters/Monsters/BanditLeader.xml
 
 #begin Characters/Monsters/BanditMage.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/BanditMage.xml
+/copy:Characters/Monsters/BanditMage.xml
 
 #begin Characters/Monsters/BanditMaster.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/BanditMaster.xml
+/copy:Characters/Monsters/BanditMaster.xml
 
 #begin Characters/Monsters/BanditMinor.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/BanditMinor.xml
+/copy:Characters/Monsters/BanditMinor.xml
 
 #begin Characters/Monsters/BruteMage.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/BruteMage.xml
+/copy:Characters/Monsters/BruteMage.xml
 
 #begin Characters/Monsters/BruteMaster.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/BruteMaster.xml
+/copy:Characters/Monsters/BruteMaster.xml
 
 #begin Characters/Monsters/CrimsonHood.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/CrimsonHood.xml
+/copy:Characters/Monsters/CrimsonHood.xml
 
 #begin Characters/Monsters/GoblinGrunt.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/GoblinGrunt.xml
+/copy:Characters/Monsters/GoblinGrunt.xml
 
 #begin Characters/Monsters/GoblinMage.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/GoblinMage.xml
+/copy:Characters/Monsters/GoblinMage.xml
 
 #begin Characters/Monsters/OrcBrute.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/OrcBrute.xml
+/copy:Characters/Monsters/OrcBrute.xml
 
 #begin Characters/Monsters/OrcCaptain.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/OrcCaptain.xml
+/copy:Characters/Monsters/OrcCaptain.xml
 
 #begin Characters/Monsters/OrcGrunt.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/OrcGrunt.xml
+/copy:Characters/Monsters/OrcGrunt.xml
 
 #begin Characters/Monsters/OrcSoldier.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/OrcSoldier.xml
+/copy:Characters/Monsters/OrcSoldier.xml
 
 #begin Characters/Monsters/SirShire.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/SirShire.xml
+/copy:Characters/Monsters/SirShire.xml
 
 #begin Characters/Monsters/Tamar.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Monsters/Tamar.xml
+/copy:Characters/Monsters/Tamar.xml
 
 #begin Characters/Players/Kolatt.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Players/Kolatt.xml
+/copy:Characters/Players/Kolatt.xml
 
 #begin Characters/Players/Nykkas.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Players/Nykkas.xml
+/copy:Characters/Players/Nykkas.xml
 
 #begin Characters/Players/Shenidd.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Players/Shenidd.xml
+/copy:Characters/Players/Shenidd.xml
 
 #begin Characters/Players/Tyjavus.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Players/Tyjavus.xml
+/copy:Characters/Players/Tyjavus.xml
 
 #begin Characters/Players/Vashekk.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/Players/Vashekk.xml
+/copy:Characters/Players/Vashekk.xml
 
 #begin Characters/QuestNPCs/Ayttas.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/Ayttas.xml
+/copy:Characters/QuestNPCs/Ayttas.xml
 
 #begin Characters/QuestNPCs/Dunkum.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/Dunkum.xml
+/copy:Characters/QuestNPCs/Dunkum.xml
 
 #begin Characters/QuestNPCs/Ekin.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/Ekin.xml
+/copy:Characters/QuestNPCs/Ekin.xml
 
 #begin Characters/QuestNPCs/HealingInn.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/HealingInn.xml
+/copy:Characters/QuestNPCs/HealingInn.xml
 
 #begin Characters/QuestNPCs/HealTheSoul.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/HealTheSoul.xml
+/copy:Characters/QuestNPCs/HealTheSoul.xml
 
 #begin Characters/QuestNPCs/Itemania.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/Itemania.xml
+/copy:Characters/QuestNPCs/Itemania.xml
 
 #begin Characters/QuestNPCs/JangElder.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/JangElder.xml
+/copy:Characters/QuestNPCs/JangElder.xml
 
 #begin Characters/QuestNPCs/Kneevan.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/Kneevan.xml
+/copy:Characters/QuestNPCs/Kneevan.xml
 
 #begin Characters/QuestNPCs/Manny.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/Manny.xml
+/copy:Characters/QuestNPCs/Manny.xml
 
 #begin Characters/QuestNPCs/NewAgeInn.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/NewAgeInn.xml
+/copy:Characters/QuestNPCs/NewAgeInn.xml
 
 #begin Characters/QuestNPCs/Sheddarr.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/Sheddarr.xml
+/copy:Characters/QuestNPCs/Sheddarr.xml
 
 #begin Characters/QuestNPCs/Shejarr.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/Shejarr.xml
+/copy:Characters/QuestNPCs/Shejarr.xml
 
 #begin Characters/QuestNPCs/Theaniv.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/Theaniv.xml
+/copy:Characters/QuestNPCs/Theaniv.xml
 
 #begin Characters/QuestNPCs/TheWeaponSmith.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/TheWeaponSmith.xml
+/copy:Characters/QuestNPCs/TheWeaponSmith.xml
 
 #begin Characters/QuestNPCs/ThisAnInn.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/ThisAnInn.xml
+/copy:Characters/QuestNPCs/ThisAnInn.xml
 
 #begin Characters/QuestNPCs/ToPlotTown.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/ToPlotTown.xml
+/copy:Characters/QuestNPCs/ToPlotTown.xml
 
 #begin Characters/QuestNPCs/Ujar.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/Ujar.xml
+/copy:Characters/QuestNPCs/Ujar.xml
 
 #begin Characters/QuestNPCs/Vejnas.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/Vejnas.xml
+/copy:Characters/QuestNPCs/Vejnas.xml
 
 #begin Characters/QuestNPCs/WhoMe.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Characters/QuestNPCs/WhoMe.xml
+/copy:Characters/QuestNPCs/WhoMe.xml
 
 #begin Fonts/ButtonNamesFont.bmp
 /importer:TextureImporter
@@ -485,1182 +393,710 @@
 /processorParam:TextureFormat=Color
 /build:Fonts/PlayerStatisticsFont.bmp
 
-#begin Fonts/Title.spritefont
-/importer:FontDescriptionImporter
-/processor:FontDescriptionProcessor
-/processorParam:PremultiplyAlpha=True
-/processorParam:TextureFormat=Compressed
-/build:Fonts/Title.spritefont
-
 #begin Gear/Armor/BronzeArmor.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/BronzeArmor.xml
+/copy:Gear/Armor/BronzeArmor.xml
 
 #begin Gear/Armor/BronzeBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/BronzeBoots.xml
+/copy:Gear/Armor/BronzeBoots.xml
 
 #begin Gear/Armor/BronzeHelmet.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/BronzeHelmet.xml
+/copy:Gear/Armor/BronzeHelmet.xml
 
 #begin Gear/Armor/BronzeShield.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/BronzeShield.xml
+/copy:Gear/Armor/BronzeShield.xml
 
 #begin Gear/Armor/ChainBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/ChainBoots.xml
+/copy:Gear/Armor/ChainBoots.xml
 
 #begin Gear/Armor/ChainHelmet.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/ChainHelmet.xml
+/copy:Gear/Armor/ChainHelmet.xml
 
 #begin Gear/Armor/ChainMail.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/ChainMail.xml
+/copy:Gear/Armor/ChainMail.xml
 
 #begin Gear/Armor/ChainShield.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/ChainShield.xml
+/copy:Gear/Armor/ChainShield.xml
 
 #begin Gear/Armor/HideArmor.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/HideArmor.xml
+/copy:Gear/Armor/HideArmor.xml
 
 #begin Gear/Armor/HideBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/HideBoots.xml
+/copy:Gear/Armor/HideBoots.xml
 
 #begin Gear/Armor/HideHelmet.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/HideHelmet.xml
+/copy:Gear/Armor/HideHelmet.xml
 
 #begin Gear/Armor/HideShield.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/HideShield.xml
+/copy:Gear/Armor/HideShield.xml
 
 #begin Gear/Armor/IronArmor.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/IronArmor.xml
+/copy:Gear/Armor/IronArmor.xml
 
 #begin Gear/Armor/IronBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/IronBoots.xml
+/copy:Gear/Armor/IronBoots.xml
 
 #begin Gear/Armor/IronHelmet.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/IronHelmet.xml
+/copy:Gear/Armor/IronHelmet.xml
 
 #begin Gear/Armor/IronShield.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/IronShield.xml
+/copy:Gear/Armor/IronShield.xml
 
 #begin Gear/Armor/IronShieldPlus.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/IronShieldPlus.xml
+/copy:Gear/Armor/IronShieldPlus.xml
 
 #begin Gear/Armor/LeatherArmor.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LeatherArmor.xml
+/copy:Gear/Armor/LeatherArmor.xml
 
 #begin Gear/Armor/LeatherArmorPlus.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LeatherArmorPlus.xml
+/copy:Gear/Armor/LeatherArmorPlus.xml
 
 #begin Gear/Armor/LeatherBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LeatherBoots.xml
+/copy:Gear/Armor/LeatherBoots.xml
 
 #begin Gear/Armor/LeatherBootsPlus.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LeatherBootsPlus.xml
+/copy:Gear/Armor/LeatherBootsPlus.xml
 
 #begin Gear/Armor/LeatherHelmet.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LeatherHelmet.xml
+/copy:Gear/Armor/LeatherHelmet.xml
 
 #begin Gear/Armor/LeatherHelmetPlus.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LeatherHelmetPlus.xml
+/copy:Gear/Armor/LeatherHelmetPlus.xml
 
 #begin Gear/Armor/LeatherHide.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LeatherHide.xml
+/copy:Gear/Armor/LeatherHide.xml
 
 #begin Gear/Armor/LeatherShield.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LeatherShield.xml
+/copy:Gear/Armor/LeatherShield.xml
 
 #begin Gear/Armor/LeatherShieldPlus.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LeatherShieldPlus.xml
+/copy:Gear/Armor/LeatherShieldPlus.xml
 
 #begin Gear/Armor/LegendaryArmor.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LegendaryArmor.xml
+/copy:Gear/Armor/LegendaryArmor.xml
 
 #begin Gear/Armor/LegendaryBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LegendaryBoots.xml
+/copy:Gear/Armor/LegendaryBoots.xml
 
 #begin Gear/Armor/LegendaryHelmet.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LegendaryHelmet.xml
+/copy:Gear/Armor/LegendaryHelmet.xml
 
 #begin Gear/Armor/LegendaryHood.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LegendaryHood.xml
+/copy:Gear/Armor/LegendaryHood.xml
 
 #begin Gear/Armor/LegendaryRobe.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LegendaryRobe.xml
+/copy:Gear/Armor/LegendaryRobe.xml
 
 #begin Gear/Armor/LegendaryShield.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/LegendaryShield.xml
+/copy:Gear/Armor/LegendaryShield.xml
 
 #begin Gear/Armor/MageBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/MageBoots.xml
+/copy:Gear/Armor/MageBoots.xml
 
 #begin Gear/Armor/MageHood.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/MageHood.xml
+/copy:Gear/Armor/MageHood.xml
 
 #begin Gear/Armor/MagicMageBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/MagicMageBoots.xml
+/copy:Gear/Armor/MagicMageBoots.xml
 
 #begin Gear/Armor/MagicMageHood.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/MagicMageHood.xml
+/copy:Gear/Armor/MagicMageHood.xml
 
 #begin Gear/Armor/MagicRobe.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/MagicRobe.xml
+/copy:Gear/Armor/MagicRobe.xml
 
 #begin Gear/Armor/Robe.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/Robe.xml
+/copy:Gear/Armor/Robe.xml
 
 #begin Gear/Armor/SageBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/SageBoots.xml
+/copy:Gear/Armor/SageBoots.xml
 
 #begin Gear/Armor/SageHood.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/SageHood.xml
+/copy:Gear/Armor/SageHood.xml
 
 #begin Gear/Armor/SageRobe.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/SageRobe.xml
+/copy:Gear/Armor/SageRobe.xml
 
 #begin Gear/Armor/SteelArmor.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/SteelArmor.xml
+/copy:Gear/Armor/SteelArmor.xml
 
 #begin Gear/Armor/SteelBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/SteelBoots.xml
+/copy:Gear/Armor/SteelBoots.xml
 
 #begin Gear/Armor/SteelHelmet.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/SteelHelmet.xml
+/copy:Gear/Armor/SteelHelmet.xml
 
 #begin Gear/Armor/SteelShield.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/SteelShield.xml
+/copy:Gear/Armor/SteelShield.xml
 
 #begin Gear/Armor/TamarArmor.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/TamarArmor.xml
+/copy:Gear/Armor/TamarArmor.xml
 
 #begin Gear/Armor/TamarBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/TamarBoots.xml
+/copy:Gear/Armor/TamarBoots.xml
 
 #begin Gear/Armor/TamarHelmet.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/TamarHelmet.xml
+/copy:Gear/Armor/TamarHelmet.xml
 
 #begin Gear/Armor/TamarShield.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/TamarShield.xml
+/copy:Gear/Armor/TamarShield.xml
 
 #begin Gear/Armor/WornMageBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/WornMageBoots.xml
+/copy:Gear/Armor/WornMageBoots.xml
 
 #begin Gear/Armor/WornMageHood.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/WornMageHood.xml
+/copy:Gear/Armor/WornMageHood.xml
 
 #begin Gear/Armor/WornRobe.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Armor/WornRobe.xml
+/copy:Gear/Armor/WornRobe.xml
 
 #begin Gear/Items/FireBallScroll.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Items/FireBallScroll.xml
+/copy:Gear/Items/FireBallScroll.xml
 
 #begin Gear/Items/FireBoltScroll.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Items/FireBoltScroll.xml
+/copy:Gear/Items/FireBoltScroll.xml
 
 #begin Gear/Items/GlimmeringRuby.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Items/GlimmeringRuby.xml
+/copy:Gear/Items/GlimmeringRuby.xml
 
 #begin Gear/Items/HealingPotion.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Items/HealingPotion.xml
+/copy:Gear/Items/HealingPotion.xml
 
 #begin Gear/Items/MagicPotion.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Items/MagicPotion.xml
+/copy:Gear/Items/MagicPotion.xml
 
 #begin Gear/Items/MajorHealingPotion.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Items/MajorHealingPotion.xml
+/copy:Gear/Items/MajorHealingPotion.xml
 
 #begin Gear/Items/MajorMagicPotion.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Items/MajorMagicPotion.xml
+/copy:Gear/Items/MajorMagicPotion.xml
 
 #begin Gear/Items/MDElixir.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Items/MDElixir.xml
+/copy:Gear/Items/MDElixir.xml
 
 #begin Gear/Items/MinorHealingPotion.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Items/MinorHealingPotion.xml
+/copy:Gear/Items/MinorHealingPotion.xml
 
 #begin Gear/Items/MinorMagicPotion.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Items/MinorMagicPotion.xml
+/copy:Gear/Items/MinorMagicPotion.xml
 
 #begin Gear/Items/MOElixir.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Items/MOElixir.xml
+/copy:Gear/Items/MOElixir.xml
 
 #begin Gear/Items/PDElixir.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Items/PDElixir.xml
+/copy:Gear/Items/PDElixir.xml
 
 #begin Gear/Items/POElixir.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Items/POElixir.xml
+/copy:Gear/Items/POElixir.xml
 
 #begin Gear/Weapons/BoStaff.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/BoStaff.xml
+/copy:Gear/Weapons/BoStaff.xml
 
 #begin Gear/Weapons/Claymore.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/Claymore.xml
+/copy:Gear/Weapons/Claymore.xml
 
 #begin Gear/Weapons/ClaymorePlus.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/ClaymorePlus.xml
+/copy:Gear/Weapons/ClaymorePlus.xml
 
 #begin Gear/Weapons/Club.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/Club.xml
+/copy:Gear/Weapons/Club.xml
 
 #begin Gear/Weapons/Dagger.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/Dagger.xml
+/copy:Gear/Weapons/Dagger.xml
 
 #begin Gear/Weapons/GiantClub.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/GiantClub.xml
+/copy:Gear/Weapons/GiantClub.xml
 
 #begin Gear/Weapons/GiantClubPlus.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/GiantClubPlus.xml
+/copy:Gear/Weapons/GiantClubPlus.xml
 
 #begin Gear/Weapons/LegendaryBlade.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/LegendaryBlade.xml
+/copy:Gear/Weapons/LegendaryBlade.xml
 
 #begin Gear/Weapons/LegendaryClub.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/LegendaryClub.xml
+/copy:Gear/Weapons/LegendaryClub.xml
 
 #begin Gear/Weapons/LegendaryStaff.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/LegendaryStaff.xml
+/copy:Gear/Weapons/LegendaryStaff.xml
 
 #begin Gear/Weapons/LongBlade.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/LongBlade.xml
+/copy:Gear/Weapons/LongBlade.xml
 
 #begin Gear/Weapons/LongSword.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/LongSword.xml
+/copy:Gear/Weapons/LongSword.xml
 
 #begin Gear/Weapons/MagicStaff.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/MagicStaff.xml
+/copy:Gear/Weapons/MagicStaff.xml
 
 #begin Gear/Weapons/MysticalStaff.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/MysticalStaff.xml
+/copy:Gear/Weapons/MysticalStaff.xml
 
 #begin Gear/Weapons/PersianBlade.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/PersianBlade.xml
+/copy:Gear/Weapons/PersianBlade.xml
 
 #begin Gear/Weapons/PersianSword.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/PersianSword.xml
+/copy:Gear/Weapons/PersianSword.xml
 
 #begin Gear/Weapons/SageStaff.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/SageStaff.xml
+/copy:Gear/Weapons/SageStaff.xml
 
 #begin Gear/Weapons/ShortSword.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/ShortSword.xml
+/copy:Gear/Weapons/ShortSword.xml
 
 #begin Gear/Weapons/ShortSwordPlus.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/ShortSwordPlus.xml
+/copy:Gear/Weapons/ShortSwordPlus.xml
 
 #begin Gear/Weapons/SpikedClub.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/SpikedClub.xml
+/copy:Gear/Weapons/SpikedClub.xml
 
 #begin Gear/Weapons/TamarBlade.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/TamarBlade.xml
+/copy:Gear/Weapons/TamarBlade.xml
 
 #begin Gear/Weapons/WornStaff.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Gear/Weapons/WornStaff.xml
+/copy:Gear/Weapons/WornStaff.xml
+
+#begin MainGameDescription.xml
+/copy:MainGameDescription.xml
 
 #begin Maps/Chests/BronzeGear.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/BronzeGear.xml
+/copy:Maps/Chests/BronzeGear.xml
 
 #begin Maps/Chests/Dagger.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/Dagger.xml
+/copy:Maps/Chests/Dagger.xml
 
 #begin Maps/Chests/Gold.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/Gold.xml
+/copy:Maps/Chests/Gold.xml
 
 #begin Maps/Chests/GoldPlus.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/GoldPlus.xml
+/copy:Maps/Chests/GoldPlus.xml
 
 #begin Maps/Chests/Healing.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/Healing.xml
+/copy:Maps/Chests/Healing.xml
 
 #begin Maps/Chests/Hide.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/Hide.xml
+/copy:Maps/Chests/Hide.xml
 
 #begin Maps/Chests/IronGear.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/IronGear.xml
+/copy:Maps/Chests/IronGear.xml
 
 #begin Maps/Chests/IronHelmet.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/IronHelmet.xml
+/copy:Maps/Chests/IronHelmet.xml
 
 #begin Maps/Chests/IronShield.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/IronShield.xml
+/copy:Maps/Chests/IronShield.xml
 
 #begin Maps/Chests/LeatherGear.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/LeatherGear.xml
+/copy:Maps/Chests/LeatherGear.xml
 
 #begin Maps/Chests/LeatherShieldPlus.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/LeatherShieldPlus.xml
+/copy:Maps/Chests/LeatherShieldPlus.xml
 
 #begin Maps/Chests/LegendaryArmor.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/LegendaryArmor.xml
+/copy:Maps/Chests/LegendaryArmor.xml
 
 #begin Maps/Chests/LegendaryBlade.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/LegendaryBlade.xml
+/copy:Maps/Chests/LegendaryBlade.xml
 
 #begin Maps/Chests/LegendaryBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/LegendaryBoots.xml
+/copy:Maps/Chests/LegendaryBoots.xml
 
 #begin Maps/Chests/LegendaryClub.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/LegendaryClub.xml
+/copy:Maps/Chests/LegendaryClub.xml
 
 #begin Maps/Chests/LegendaryHelmet.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/LegendaryHelmet.xml
+/copy:Maps/Chests/LegendaryHelmet.xml
 
 #begin Maps/Chests/LegendaryHood.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/LegendaryHood.xml
+/copy:Maps/Chests/LegendaryHood.xml
 
 #begin Maps/Chests/LegendaryRobe.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/LegendaryRobe.xml
+/copy:Maps/Chests/LegendaryRobe.xml
 
 #begin Maps/Chests/LegendaryShield.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/LegendaryShield.xml
+/copy:Maps/Chests/LegendaryShield.xml
 
 #begin Maps/Chests/LegendaryStaff.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/LegendaryStaff.xml
+/copy:Maps/Chests/LegendaryStaff.xml
 
 #begin Maps/Chests/LongBlade.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/LongBlade.xml
+/copy:Maps/Chests/LongBlade.xml
 
 #begin Maps/Chests/LongSword.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/LongSword.xml
+/copy:Maps/Chests/LongSword.xml
 
 #begin Maps/Chests/Mage.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/Mage.xml
+/copy:Maps/Chests/Mage.xml
 
 #begin Maps/Chests/Magic.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/Magic.xml
+/copy:Maps/Chests/Magic.xml
 
 #begin Maps/Chests/MajorHealing.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/MajorHealing.xml
+/copy:Maps/Chests/MajorHealing.xml
 
 #begin Maps/Chests/MajorMagic.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/MajorMagic.xml
+/copy:Maps/Chests/MajorMagic.xml
 
 #begin Maps/Chests/MDElixir.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/MDElixir.xml
+/copy:Maps/Chests/MDElixir.xml
 
 #begin Maps/Chests/MinorGold.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/MinorGold.xml
+/copy:Maps/Chests/MinorGold.xml
 
 #begin Maps/Chests/MinorHealing.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/MinorHealing.xml
+/copy:Maps/Chests/MinorHealing.xml
 
 #begin Maps/Chests/MinorMagic.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/MinorMagic.xml
+/copy:Maps/Chests/MinorMagic.xml
 
 #begin Maps/Chests/MOElixir.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/MOElixir.xml
+/copy:Maps/Chests/MOElixir.xml
 
 #begin Maps/Chests/MoneyBags.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/MoneyBags.xml
+/copy:Maps/Chests/MoneyBags.xml
 
 #begin Maps/Chests/PDElixir.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/PDElixir.xml
+/copy:Maps/Chests/PDElixir.xml
 
 #begin Maps/Chests/PersianBlade.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/PersianBlade.xml
+/copy:Maps/Chests/PersianBlade.xml
 
 #begin Maps/Chests/PersianSword.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/PersianSword.xml
+/copy:Maps/Chests/PersianSword.xml
 
 #begin Maps/Chests/POElixir.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/POElixir.xml
+/copy:Maps/Chests/POElixir.xml
 
 #begin Maps/Chests/Ruby.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/Ruby.xml
+/copy:Maps/Chests/Ruby.xml
 
 #begin Maps/Chests/SageBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/SageBoots.xml
+/copy:Maps/Chests/SageBoots.xml
 
 #begin Maps/Chests/SageHood.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/SageHood.xml
+/copy:Maps/Chests/SageHood.xml
 
 #begin Maps/Chests/SageStaff.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/SageStaff.xml
+/copy:Maps/Chests/SageStaff.xml
 
 #begin Maps/Chests/SteelArmor.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/SteelArmor.xml
+/copy:Maps/Chests/SteelArmor.xml
 
 #begin Maps/Chests/SteelBoots.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/SteelBoots.xml
+/copy:Maps/Chests/SteelBoots.xml
 
 #begin Maps/Chests/SteelHelmet.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/SteelHelmet.xml
+/copy:Maps/Chests/SteelHelmet.xml
 
 #begin Maps/Chests/SteelShield.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Chests/SteelShield.xml
+/copy:Maps/Chests/SteelShield.xml
 
 #begin Maps/FixedCombats/BanditLeaders5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BanditLeaders5.xml
+/copy:Maps/FixedCombats/BanditLeaders5.xml
 
 #begin Maps/FixedCombats/BanditMage2.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BanditMage2.xml
+/copy:Maps/FixedCombats/BanditMage2.xml
 
 #begin Maps/FixedCombats/BanditMage3.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BanditMage3.xml
+/copy:Maps/FixedCombats/BanditMage3.xml
 
 #begin Maps/FixedCombats/BanditMage5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BanditMage5.xml
+/copy:Maps/FixedCombats/BanditMage5.xml
 
 #begin Maps/FixedCombats/BanditMasters5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BanditMasters5.xml
+/copy:Maps/FixedCombats/BanditMasters5.xml
 
 #begin Maps/FixedCombats/BanditMinor2.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BanditMinor2.xml
+/copy:Maps/FixedCombats/BanditMinor2.xml
 
 #begin Maps/FixedCombats/BanditMinor3.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BanditMinor3.xml
+/copy:Maps/FixedCombats/BanditMinor3.xml
 
 #begin Maps/FixedCombats/BanditMinor5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BanditMinor5.xml
+/copy:Maps/FixedCombats/BanditMinor5.xml
 
 #begin Maps/FixedCombats/BanditMisc3.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BanditMisc3.xml
+/copy:Maps/FixedCombats/BanditMisc3.xml
 
 #begin Maps/FixedCombats/BanditMisc5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BanditMisc5.xml
+/copy:Maps/FixedCombats/BanditMisc5.xml
 
 #begin Maps/FixedCombats/BanditMisc5a.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BanditMisc5a.xml
+/copy:Maps/FixedCombats/BanditMisc5a.xml
 
 #begin Maps/FixedCombats/BanditMisc5b.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BanditMisc5b.xml
+/copy:Maps/FixedCombats/BanditMisc5b.xml
 
 #begin Maps/FixedCombats/BanditMisc5c.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BanditMisc5c.xml
+/copy:Maps/FixedCombats/BanditMisc5c.xml
 
 #begin Maps/FixedCombats/BruteMasters1.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/BruteMasters1.xml
+/copy:Maps/FixedCombats/BruteMasters1.xml
 
 #begin Maps/FixedCombats/Brutes1.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/Brutes1.xml
+/copy:Maps/FixedCombats/Brutes1.xml
 
 #begin Maps/FixedCombats/GoblinGrunts.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/GoblinGrunts.xml
+/copy:Maps/FixedCombats/GoblinGrunts.xml
 
 #begin Maps/FixedCombats/GoblinGrunts2.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/GoblinGrunts2.xml
+/copy:Maps/FixedCombats/GoblinGrunts2.xml
 
 #begin Maps/FixedCombats/GoblinGrunts3.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/GoblinGrunts3.xml
+/copy:Maps/FixedCombats/GoblinGrunts3.xml
 
 #begin Maps/FixedCombats/GoblinGrunts5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/GoblinGrunts5.xml
+/copy:Maps/FixedCombats/GoblinGrunts5.xml
 
 #begin Maps/FixedCombats/GoblinMages3.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/GoblinMages3.xml
+/copy:Maps/FixedCombats/GoblinMages3.xml
 
 #begin Maps/FixedCombats/GoblinMages5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/GoblinMages5.xml
+/copy:Maps/FixedCombats/GoblinMages5.xml
 
 #begin Maps/FixedCombats/Goblins.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/Goblins.xml
+/copy:Maps/FixedCombats/Goblins.xml
 
 #begin Maps/FixedCombats/GoblinsMisc3.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/GoblinsMisc3.xml
+/copy:Maps/FixedCombats/GoblinsMisc3.xml
 
 #begin Maps/FixedCombats/GoblinsMisc5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/GoblinsMisc5.xml
+/copy:Maps/FixedCombats/GoblinsMisc5.xml
 
 #begin Maps/FixedCombats/GoblinsMisc5a.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/GoblinsMisc5a.xml
+/copy:Maps/FixedCombats/GoblinsMisc5a.xml
 
 #begin Maps/FixedCombats/GoblinSoldiers5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/GoblinSoldiers5.xml
+/copy:Maps/FixedCombats/GoblinSoldiers5.xml
 
 #begin Maps/FixedCombats/Misc1.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/Misc1.xml
+/copy:Maps/FixedCombats/Misc1.xml
 
 #begin Maps/FixedCombats/Misc4.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/Misc4.xml
+/copy:Maps/FixedCombats/Misc4.xml
 
 #begin Maps/FixedCombats/Misc5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/Misc5.xml
+/copy:Maps/FixedCombats/Misc5.xml
 
 #begin Maps/FixedCombats/OrcBrutes1.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcBrutes1.xml
+/copy:Maps/FixedCombats/OrcBrutes1.xml
 
 #begin Maps/FixedCombats/OrcBrutes2.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcBrutes2.xml
+/copy:Maps/FixedCombats/OrcBrutes2.xml
 
 #begin Maps/FixedCombats/OrcBrutes3.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcBrutes3.xml
+/copy:Maps/FixedCombats/OrcBrutes3.xml
 
 #begin Maps/FixedCombats/OrcBrutes5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcBrutes5.xml
+/copy:Maps/FixedCombats/OrcBrutes5.xml
 
 #begin Maps/FixedCombats/OrcCaptains1.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcCaptains1.xml
+/copy:Maps/FixedCombats/OrcCaptains1.xml
 
 #begin Maps/FixedCombats/OrcCaptains3.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcCaptains3.xml
+/copy:Maps/FixedCombats/OrcCaptains3.xml
 
 #begin Maps/FixedCombats/OrcCaptains5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcCaptains5.xml
+/copy:Maps/FixedCombats/OrcCaptains5.xml
 
 #begin Maps/FixedCombats/OrcGrunts3.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcGrunts3.xml
+/copy:Maps/FixedCombats/OrcGrunts3.xml
 
 #begin Maps/FixedCombats/OrcGrunts5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcGrunts5.xml
+/copy:Maps/FixedCombats/OrcGrunts5.xml
 
 #begin Maps/FixedCombats/OrcMisc3.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcMisc3.xml
+/copy:Maps/FixedCombats/OrcMisc3.xml
 
 #begin Maps/FixedCombats/OrcMisc3a.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcMisc3a.xml
+/copy:Maps/FixedCombats/OrcMisc3a.xml
 
 #begin Maps/FixedCombats/OrcMisc3b.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcMisc3b.xml
+/copy:Maps/FixedCombats/OrcMisc3b.xml
 
 #begin Maps/FixedCombats/OrcMisc3c.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcMisc3c.xml
+/copy:Maps/FixedCombats/OrcMisc3c.xml
 
 #begin Maps/FixedCombats/OrcMisc3d.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcMisc3d.xml
+/copy:Maps/FixedCombats/OrcMisc3d.xml
 
 #begin Maps/FixedCombats/OrcMisc5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcMisc5.xml
+/copy:Maps/FixedCombats/OrcMisc5.xml
 
 #begin Maps/FixedCombats/OrcMisc5a.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcMisc5a.xml
+/copy:Maps/FixedCombats/OrcMisc5a.xml
 
 #begin Maps/FixedCombats/OrcMisc5b.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcMisc5b.xml
+/copy:Maps/FixedCombats/OrcMisc5b.xml
 
 #begin Maps/FixedCombats/OrcSoldiers3.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcSoldiers3.xml
+/copy:Maps/FixedCombats/OrcSoldiers3.xml
 
 #begin Maps/FixedCombats/OrcSoldiers5.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/OrcSoldiers5.xml
+/copy:Maps/FixedCombats/OrcSoldiers5.xml
 
 #begin Maps/FixedCombats/SirShire.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/SirShire.xml
+/copy:Maps/FixedCombats/SirShire.xml
 
 #begin Maps/FixedCombats/Tamar.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/FixedCombats/Tamar.xml
+/copy:Maps/FixedCombats/Tamar.xml
 
 #begin Maps/Inns/HealingInn.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Inns/HealingInn.xml
+/copy:Maps/Inns/HealingInn.xml
 
 #begin Maps/Inns/NewAgeInn.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Inns/NewAgeInn.xml
+/copy:Maps/Inns/NewAgeInn.xml
 
 #begin Maps/Inns/SanctuaryInn.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Inns/SanctuaryInn.xml
+/copy:Maps/Inns/SanctuaryInn.xml
 
 #begin Maps/Inns/ThisAnInn.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Inns/ThisAnInn.xml
+/copy:Maps/Inns/ThisAnInn.xml
 
 #begin Maps/Map001.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map001.xml
+/copy:Maps/Map001.xml
 
 #begin Maps/Map002.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map002.xml
+/copy:Maps/Map002.xml
 
 #begin Maps/Map003.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map003.xml
+/copy:Maps/Map003.xml
 
 #begin Maps/Map004.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map004.xml
+/copy:Maps/Map004.xml
 
 #begin Maps/Map005.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map005.xml
+/copy:Maps/Map005.xml
 
 #begin Maps/Map006.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map006.xml
+/copy:Maps/Map006.xml
 
 #begin Maps/Map007.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map007.xml
+/copy:Maps/Map007.xml
 
 #begin Maps/Map008.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map008.xml
+/copy:Maps/Map008.xml
 
 #begin Maps/Map009.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map009.xml
+/copy:Maps/Map009.xml
 
 #begin Maps/Map010.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map010.xml
+/copy:Maps/Map010.xml
 
 #begin Maps/Map011.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map011.xml
+/copy:Maps/Map011.xml
 
 #begin Maps/Map012.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map012.xml
+/copy:Maps/Map012.xml
 
 #begin Maps/Map013.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map013.xml
+/copy:Maps/Map013.xml
 
 #begin Maps/Map014.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map014.xml
+/copy:Maps/Map014.xml
 
 #begin Maps/Map015.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map015.xml
+/copy:Maps/Map015.xml
 
 #begin Maps/Map016.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Map016.xml
+/copy:Maps/Map016.xml
 
 #begin Maps/Stores/GearMan.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Stores/GearMan.xml
+/copy:Maps/Stores/GearMan.xml
 
 #begin Maps/Stores/Gearrific.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Stores/Gearrific.xml
+/copy:Maps/Stores/Gearrific.xml
 
 #begin Maps/Stores/HealTheSoul.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Stores/HealTheSoul.xml
+/copy:Maps/Stores/HealTheSoul.xml
 
 #begin Maps/Stores/Itemania.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Stores/Itemania.xml
+/copy:Maps/Stores/Itemania.xml
 
 #begin Maps/Stores/PotionsGalore.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Stores/PotionsGalore.xml
+/copy:Maps/Stores/PotionsGalore.xml
 
 #begin Maps/Stores/TheWeaponsmith.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Stores/TheWeaponsmith.xml
+/copy:Maps/Stores/TheWeaponsmith.xml
 
 #begin Maps/Stores/WhoMeShop.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Maps/Stores/WhoMeShop.xml
+/copy:Maps/Stores/WhoMeShop.xml
 
 #begin Quests/DefeatTamar.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Quests/DefeatTamar.xml
+/copy:Quests/DefeatTamar.xml
 
 #begin Quests/HideArmor.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Quests/HideArmor.xml
+/copy:Quests/HideArmor.xml
 
 #begin Quests/LushVillage.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Quests/LushVillage.xml
+/copy:Quests/LushVillage.xml
 
 #begin Quests/QuestLines/MainQuestLine.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Quests/QuestLines/MainQuestLine.xml
+/copy:Quests/QuestLines/MainQuestLine.xml
 
 #begin Quests/SaveMercadia.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Quests/SaveMercadia.xml
+/copy:Quests/SaveMercadia.xml
 
 #begin Quests/ShortSword.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Quests/ShortSword.xml
+/copy:Quests/ShortSword.xml
 
 #begin Quests/TestBattle.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Quests/TestBattle.xml
+/copy:Quests/TestBattle.xml
 
 #begin Quests/TheBanditLeader.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Quests/TheBanditLeader.xml
+/copy:Quests/TheBanditLeader.xml
 
 #begin Quests/TheGoblinBrigade.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Quests/TheGoblinBrigade.xml
+/copy:Quests/TheGoblinBrigade.xml
 
 #begin Quests/TheOrcCaptain.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Quests/TheOrcCaptain.xml
+/copy:Quests/TheOrcCaptain.xml
 
 #begin Spells/FireBlast.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/FireBlast.xml
+/copy:Spells/FireBlast.xml
 
 #begin Spells/FireBolt.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/FireBolt.xml
+/copy:Spells/FireBolt.xml
 
 #begin Spells/FireBomb.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/FireBomb.xml
+/copy:Spells/FireBomb.xml
 
 #begin Spells/Heal.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/Heal.xml
+/copy:Spells/Heal.xml
 
 #begin Spells/IceBlast.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/IceBlast.xml
+/copy:Spells/IceBlast.xml
 
 #begin Spells/IceBolt.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/IceBolt.xml
+/copy:Spells/IceBolt.xml
 
 #begin Spells/MassFireBlast.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/MassFireBlast.xml
+/copy:Spells/MassFireBlast.xml
 
 #begin Spells/MassFireBolt.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/MassFireBolt.xml
+/copy:Spells/MassFireBolt.xml
 
 #begin Spells/MassHeal.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/MassHeal.xml
+/copy:Spells/MassHeal.xml
 
 #begin Spells/MassMinorHeal.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/MassMinorHeal.xml
+/copy:Spells/MassMinorHeal.xml
 
 #begin Spells/MDDown.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/MDDown.xml
+/copy:Spells/MDDown.xml
 
 #begin Spells/MinorHeal.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/MinorHeal.xml
+/copy:Spells/MinorHeal.xml
 
 #begin Spells/MODown.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/MODown.xml
+/copy:Spells/MODown.xml
 
 #begin Spells/PDDown.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/PDDown.xml
+/copy:Spells/PDDown.xml
 
 #begin Spells/PODown.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/PODown.xml
+/copy:Spells/PODown.xml
 
 #begin Spells/SuperHeal.xml
-/importer:XmlImporter
-/processor:PassThroughProcessor
-/build:Spells/SuperHeal.xml
+/copy:Spells/SuperHeal.xml
 
 #begin Texture/Buttons/AButton.png
 /importer:TextureImporter

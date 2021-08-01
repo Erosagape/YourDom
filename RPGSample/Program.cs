@@ -7,7 +7,7 @@ namespace RPGSample
         [STAThread]
         static void Main()
         {
-            using (var game = new TestGame())
+            using (var game = new RPGSample())
                 game.Run();
         }
     }

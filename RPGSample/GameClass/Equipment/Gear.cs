@@ -104,6 +104,7 @@ namespace RPGSample
         public List<string> SupportedClasses
         {
             get { return supportedClasses; }
+            set { supportedClasses = value; }
         }
 
 
@@ -187,6 +188,7 @@ namespace RPGSample
         public Texture2D IconTexture
         {
             get { return iconTexture; }
+            set { iconTexture = value; }
         }
         /// <summary>
         /// Draw the icon for this gear.

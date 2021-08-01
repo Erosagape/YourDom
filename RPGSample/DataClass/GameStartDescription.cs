@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework.Content;
+using System.Xml;
+using System.Xml.Serialization;
 namespace RPGSample
 {
+    [Serializable]
     public class GameStartDescription
     {
+
         /// <summary>
         /// The content name of the  map for a new game.
         /// </summary>
@@ -26,6 +30,8 @@ namespace RPGSample
         /// <summary>
         /// The content names of the players in the party from the beginning.
         /// </summary>
+        [XmlArray]
+        [XmlArrayItem(ElementName ="Item")]
         public List<string> PlayerContentNames
         {
             get { return playerContentNames; }

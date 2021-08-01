@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-
+using System.Xml.Serialization;
 namespace RPGSample
 {
+    [Serializable]
     public class Map : ContentObject, ICloneable
     {
         /// <summary>
@@ -65,10 +66,12 @@ namespace RPGSample
         /// <remarks>
         /// Used to determine the source rectangle from the map layer value.
         /// </remarks>
+        [XmlIgnore]
         [ContentSerializerIgnore]
         public int TilesPerRow
         {
             get { return tilesPerRow; }
+            set { tilesPerRow = value; }
         }
         /// <summary>
         /// A valid spawn position for this map. 
@@ -106,10 +109,11 @@ namespace RPGSample
         /// <summary>
         /// The texture that contains the tiles for this map.
         /// </summary>
-        [ContentSerializerIgnore]
+        [ContentSerializerIgnore][XmlIgnore]
         public Texture2D Texture
         {
             get { return texture; }
+            set { texture = value; }
         }
 
 
@@ -140,10 +144,11 @@ namespace RPGSample
         /// The texture that contains the background for combats 
         /// that occur while traveling on this map.
         /// </summary>
-        [ContentSerializerIgnore]
+        [ContentSerializerIgnore][XmlIgnore]
         public Texture2D CombatTexture
         {
             get { return combatTexture; }
+            set { combatTexture = value; }
         }
         /// <summary>
         /// The name of the music cue for this map.
@@ -180,7 +185,7 @@ namespace RPGSample
 
         /// <summary>
         /// Spatial array for the ground tiles for this map.
-        /// </summary>
+        /// </summary>        
         public int[] BaseLayer
         {
             get { return baseLayer; }
@@ -396,6 +401,8 @@ namespace RPGSample
         /// <summary>
         /// Portals to other maps.
         /// </summary>
+        [XmlArray]
+        [XmlArrayItem(ElementName = "Item")]
         public List<Portal> Portals
         {
             get { return portals; }
@@ -410,6 +417,8 @@ namespace RPGSample
         /// <summary>
         /// The content names and positions of the portals on this map.
         /// </summary>
+        [XmlArray]
+        [XmlArrayItem(ElementName ="Item")]
         public List<MapEntry<Portal>> PortalEntries
         {
             get { return portalEntries; }
@@ -443,6 +452,8 @@ namespace RPGSample
         /// <summary>
         /// The content names and positions of the treasure chests on this map.
         /// </summary>
+        [XmlArray]
+        [XmlArrayItem(ElementName = "Item")]
         public List<MapEntry<Chest>> ChestEntries
         {
             get { return chestEntries; }
@@ -461,6 +472,8 @@ namespace RPGSample
         /// The content name, positions, and orientations of the 
         /// fixed combat encounters on this map.
         /// </summary>
+        [XmlArray]
+        [XmlArrayItem(ElementName = "Item")]
         public List<MapEntry<FixedCombat>> FixedCombatEntries
         {
             get { return fixedCombatEntries; }
@@ -492,6 +505,8 @@ namespace RPGSample
         /// <summary>
         /// The content names, positions, and orientations of quest Npcs on this map.
         /// </summary>
+        [XmlArray]
+        [XmlArrayItem(ElementName = "Item")]
         public List<MapEntry<QuestNpc>> QuestNpcEntries
         {
             get { return questNpcEntries; }
@@ -508,6 +523,8 @@ namespace RPGSample
         /// <summary>
         /// The content names, positions, and orientations of player Npcs on this map.
         /// </summary>
+        [XmlArray]
+        [XmlArrayItem(ElementName = "Item")]
         public List<MapEntry<Player>> PlayerNpcEntries
         {
             get { return playerNpcEntries; }
@@ -524,6 +541,8 @@ namespace RPGSample
         /// <summary>
         /// The content names, positions, and orientations of the inns on this map.
         /// </summary>
+        [XmlArray]
+        [XmlArrayItem(ElementName = "Item")]
         public List<MapEntry<Inn>> InnEntries
         {
             get { return innEntries; }
@@ -540,6 +559,8 @@ namespace RPGSample
         /// <summary>
         /// The content names, positions, and orientations of the stores on this map.
         /// </summary>
+        [XmlArray]
+        [XmlArrayItem(ElementName = "Item")]
         public List<MapEntry<Store>> StoreEntries
         {
             get { return storeEntries; }

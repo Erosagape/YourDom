@@ -9,6 +9,12 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LangVersion>Latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>Latest</LangVersion>
+  </PropertyGroup>
   <ItemGroup>
     <None Remove="Icon.ico" />
     <None Remove="Icon.bmp" />
@@ -29,6 +35,287 @@
     <None Remove="GameClass\Quest\" />
     <None Remove="Content\Texture\" />
     <None Remove="Content\GameData\Map\" />
+    <None Remove="Content\Maps\Map005.xml" />
+    <None Remove="Content\Maps\Map011.xml" />
+    <None Remove="Content\Maps\Map010.xml" />
+    <None Remove="Content\Maps\Map004.xml" />
+    <None Remove="Content\Maps\Map012.xml" />
+    <None Remove="Content\Maps\Map006.xml" />
+    <None Remove="Content\Maps\Map007.xml" />
+    <None Remove="Content\Maps\Map013.xml" />
+    <None Remove="Content\Maps\Map003.xml" />
+    <None Remove="Content\Maps\Map002.xml" />
+    <None Remove="Content\Maps\Map016.xml" />
+    <None Remove="Content\Maps\Map014.xml" />
+    <None Remove="Content\Maps\Map015.xml" />
+    <None Remove="Content\Maps\Map001.xml" />
+    <None Remove="Content\Maps\Map009.xml" />
+    <None Remove="Content\Maps\Map008.xml" />
+    <None Remove="Content\CharacterClasses\Wizard.xml" />
+    <None Remove="Content\CharacterClasses\Warrior.xml" />
+    <None Remove="Content\CharacterClasses\RedMage.xml" />
+    <None Remove="Content\CharacterClasses\Mystic.xml" />
+    <None Remove="Content\CharacterClasses\Paladin.xml" />
+    <None Remove="Content\CharacterClasses\Barbarian.xml" />
+    <None Remove="Content\Characters\Monsters\CrimsonHood.xml" />
+    <None Remove="Content\Characters\Monsters\OrcSoldier.xml" />
+    <None Remove="Content\Characters\Monsters\BanditMinor.xml" />
+    <None Remove="Content\Characters\Monsters\BanditGuard.xml" />
+    <None Remove="Content\Characters\Monsters\BruteMage.xml" />
+    <None Remove="Content\Characters\Monsters\GoblinMage.xml" />
+    <None Remove="Content\Characters\Monsters\GoblinGrunt.xml" />
+    <None Remove="Content\Characters\Monsters\SirShire.xml" />
+    <None Remove="Content\Characters\Monsters\OrcCaptain.xml" />
+    <None Remove="Content\Characters\Monsters\Tamar.xml" />
+    <None Remove="Content\Characters\Monsters\BanditLeader.xml" />
+    <None Remove="Content\Characters\Monsters\BanditMage.xml" />
+    <None Remove="Content\Characters\Monsters\BanditMaster.xml" />
+    <None Remove="Content\Characters\Monsters\BruteMaster.xml" />
+    <None Remove="Content\Characters\Monsters\OrcBrute.xml" />
+    <None Remove="Content\Characters\Monsters\OrcGrunt.xml" />
+    <None Remove="Content\Characters\Players\Tyjavus.xml" />
+    <None Remove="Content\Characters\Players\Kolatt.xml" />
+    <None Remove="Content\Characters\Players\Shenidd.xml" />
+    <None Remove="Content\Characters\Players\Vashekk.xml" />
+    <None Remove="Content\Characters\Players\Nykkas.xml" />
+    <None Remove="Content\Characters\QuestNPCs\Sheddarr.xml" />
+    <None Remove="Content\Characters\QuestNPCs\Vejnas.xml" />
+    <None Remove="Content\Characters\QuestNPCs\JangElder.xml" />
+    <None Remove="Content\Characters\QuestNPCs\Dunkum.xml" />
+    <None Remove="Content\Characters\QuestNPCs\Shejarr.xml" />
+    <None Remove="Content\Characters\QuestNPCs\ToPlotTown.xml" />
+    <None Remove="Content\Characters\QuestNPCs\Ekin.xml" />
+    <None Remove="Content\Characters\QuestNPCs\Itemania.xml" />
+    <None Remove="Content\Characters\QuestNPCs\Theaniv.xml" />
+    <None Remove="Content\Characters\QuestNPCs\Ayttas.xml" />
+    <None Remove="Content\Characters\QuestNPCs\HealingInn.xml" />
+    <None Remove="Content\Characters\QuestNPCs\Kneevan.xml" />
+    <None Remove="Content\Characters\QuestNPCs\ThisAnInn.xml" />
+    <None Remove="Content\Characters\QuestNPCs\TheWeaponSmith.xml" />
+    <None Remove="Content\Characters\QuestNPCs\WhoMe.xml" />
+    <None Remove="Content\Characters\QuestNPCs\Manny.xml" />
+    <None Remove="Content\Characters\QuestNPCs\Ujar.xml" />
+    <None Remove="Content\Characters\QuestNPCs\NewAgeInn.xml" />
+    <None Remove="Content\Characters\QuestNPCs\HealTheSoul.xml" />
+    <None Remove="Content\Gear\Armor\BronzeBoots.xml" />
+    <None Remove="Content\Gear\Armor\LeatherArmorPlus.xml" />
+    <None Remove="Content\Gear\Armor\WornMageHood.xml" />
+    <None Remove="Content\Gear\Armor\HideHelmet.xml" />
+    <None Remove="Content\Gear\Armor\ChainHelmet.xml" />
+    <None Remove="Content\Gear\Armor\SteelShield.xml" />
+    <None Remove="Content\Gear\Armor\SageBoots.xml" />
+    <None Remove="Content\Gear\Armor\TamarBoots.xml" />
+    <None Remove="Content\Gear\Armor\HideArmor.xml" />
+    <None Remove="Content\Gear\Armor\MageHood.xml" />
+    <None Remove="Content\Gear\Armor\IronHelmet.xml" />
+    <None Remove="Content\Gear\Armor\WornRobe.xml" />
+    <None Remove="Content\Gear\Armor\MagicMageBoots.xml" />
+    <None Remove="Content\Gear\Armor\LeatherShield.xml" />
+    <None Remove="Content\Gear\Armor\SageHood.xml" />
+    <None Remove="Content\Gear\Armor\LeatherHide.xml" />
+    <None Remove="Content\Gear\Armor\SageRobe.xml" />
+    <None Remove="Content\Gear\Armor\HideBoots.xml" />
+    <None Remove="Content\Gear\Armor\LegendaryHelmet.xml" />
+    <None Remove="Content\Gear\Armor\TamarArmor.xml" />
+    <None Remove="Content\Gear\Armor\BronzeHelmet.xml" />
+    <None Remove="Content\Gear\Armor\ChainBoots.xml" />
+    <None Remove="Content\Gear\Armor\BronzeArmor.xml" />
+    <None Remove="Content\Gear\Armor\LeatherHelmetPlus.xml" />
+    <None Remove="Content\Gear\Armor\TamarShield.xml" />
+    <None Remove="Content\Gear\Armor\MageBoots.xml" />
+    <None Remove="Content\Gear\Armor\SteelArmor.xml" />
+    <None Remove="Content\Gear\Armor\HideShield.xml" />
+    <None Remove="Content\Gear\Armor\LegendaryHood.xml" />
+    <None Remove="Content\Gear\Armor\LegendaryRobe.xml" />
+    <None Remove="Content\Gear\Armor\IronArmor.xml" />
+    <None Remove="Content\Gear\Armor\LeatherArmor.xml" />
+    <None Remove="Content\Gear\Armor\LeatherShieldPlus.xml" />
+    <None Remove="Content\Gear\Armor\WornMageBoots.xml" />
+    <None Remove="Content\Gear\Armor\SteelHelmet.xml" />
+    <None Remove="Content\Gear\Armor\IronShieldPlus.xml" />
+    <None Remove="Content\Gear\Armor\ChainShield.xml" />
+    <None Remove="Content\Gear\Armor\Robe.xml" />
+    <None Remove="Content\Gear\Armor\LegendaryArmor.xml" />
+    <None Remove="Content\Gear\Armor\MagicMageHood.xml" />
+    <None Remove="Content\Gear\Armor\LeatherBootsPlus.xml" />
+    <None Remove="Content\Gear\Armor\LegendaryShield.xml" />
+    <None Remove="Content\Gear\Armor\LeatherBoots.xml" />
+    <None Remove="Content\Gear\Armor\ChainMail.xml" />
+    <None Remove="Content\Gear\Armor\MagicRobe.xml" />
+    <None Remove="Content\Gear\Armor\LeatherHelmet.xml" />
+    <None Remove="Content\Gear\Armor\LegendaryBoots.xml" />
+    <None Remove="Content\Gear\Armor\IronShield.xml" />
+    <None Remove="Content\Gear\Armor\TamarHelmet.xml" />
+    <None Remove="Content\Gear\Armor\SteelBoots.xml" />
+    <None Remove="Content\Gear\Armor\IronBoots.xml" />
+    <None Remove="Content\Gear\Armor\BronzeShield.xml" />
+    <None Remove="Content\Gear\Items\MOElixir.xml" />
+    <None Remove="Content\Gear\Items\MajorMagicPotion.xml" />
+    <None Remove="Content\Gear\Items\MagicPotion.xml" />
+    <None Remove="Content\Gear\Items\MDElixir.xml" />
+    <None Remove="Content\Gear\Items\GlimmeringRuby.xml" />
+    <None Remove="Content\Gear\Items\MinorHealingPotion.xml" />
+    <None Remove="Content\Gear\Items\FireBoltScroll.xml" />
+    <None Remove="Content\Gear\Items\MajorHealingPotion.xml" />
+    <None Remove="Content\Gear\Items\FireBallScroll.xml" />
+    <None Remove="Content\Gear\Items\HealingPotion.xml" />
+    <None Remove="Content\Gear\Items\PDElixir.xml" />
+    <None Remove="Content\Gear\Items\MinorMagicPotion.xml" />
+    <None Remove="Content\Gear\Items\POElixir.xml" />
+    <None Remove="Content\Gear\Weapons\LegendaryStaff.xml" />
+    <None Remove="Content\Gear\Weapons\LongBlade.xml" />
+    <None Remove="Content\Gear\Weapons\LegendaryBlade.xml" />
+    <None Remove="Content\Gear\Weapons\Dagger.xml" />
+    <None Remove="Content\Gear\Weapons\LongSword.xml" />
+    <None Remove="Content\Gear\Weapons\SpikedClub.xml" />
+    <None Remove="Content\Gear\Weapons\ShortSwordPlus.xml" />
+    <None Remove="Content\Gear\Weapons\ClaymorePlus.xml" />
+    <None Remove="Content\Gear\Weapons\BoStaff.xml" />
+    <None Remove="Content\Gear\Weapons\MysticalStaff.xml" />
+    <None Remove="Content\Gear\Weapons\PersianSword.xml" />
+    <None Remove="Content\Gear\Weapons\MagicStaff.xml" />
+    <None Remove="Content\Gear\Weapons\Claymore.xml" />
+    <None Remove="Content\Gear\Weapons\WornStaff.xml" />
+    <None Remove="Content\Gear\Weapons\ShortSword.xml" />
+    <None Remove="Content\Gear\Weapons\SageStaff.xml" />
+    <None Remove="Content\Gear\Weapons\GiantClubPlus.xml" />
+    <None Remove="Content\Gear\Weapons\LegendaryClub.xml" />
+    <None Remove="Content\Gear\Weapons\TamarBlade.xml" />
+    <None Remove="Content\Gear\Weapons\Club.xml" />
+    <None Remove="Content\Gear\Weapons\PersianBlade.xml" />
+    <None Remove="Content\Gear\Weapons\GiantClub.xml" />
+    <None Remove="Content\Maps\Chests\MOElixir.xml" />
+    <None Remove="Content\Maps\Chests\MajorHealing.xml" />
+    <None Remove="Content\Maps\Chests\LegendaryStaff.xml" />
+    <None Remove="Content\Maps\Chests\SteelShield.xml" />
+    <None Remove="Content\Maps\Chests\LongBlade.xml" />
+    <None Remove="Content\Maps\Chests\Ruby.xml" />
+    <None Remove="Content\Maps\Chests\Healing.xml" />
+    <None Remove="Content\Maps\Chests\SageBoots.xml" />
+    <None Remove="Content\Maps\Chests\Mage.xml" />
+    <None Remove="Content\Maps\Chests\MDElixir.xml" />
+    <None Remove="Content\Maps\Chests\LegendaryBlade.xml" />
+    <None Remove="Content\Maps\Chests\Dagger.xml" />
+    <None Remove="Content\Maps\Chests\IronHelmet.xml" />
+    <None Remove="Content\Maps\Chests\MajorMagic.xml" />
+    <None Remove="Content\Maps\Chests\SageHood.xml" />
+    <None Remove="Content\Maps\Chests\LongSword.xml" />
+    <None Remove="Content\Maps\Chests\LegendaryHelmet.xml" />
+    <None Remove="Content\Maps\Chests\MoneyBags.xml" />
+    <None Remove="Content\Maps\Chests\MinorMagic.xml" />
+    <None Remove="Content\Maps\Chests\MinorHealing.xml" />
+    <None Remove="Content\Maps\Chests\GoldPlus.xml" />
+    <None Remove="Content\Maps\Chests\SteelArmor.xml" />
+    <None Remove="Content\Maps\Chests\IronGear.xml" />
+    <None Remove="Content\Maps\Chests\LegendaryHood.xml" />
+    <None Remove="Content\Maps\Chests\LegendaryRobe.xml" />
+    <None Remove="Content\Maps\Chests\PersianSword.xml" />
+    <None Remove="Content\Maps\Chests\LeatherGear.xml" />
+    <None Remove="Content\Maps\Chests\LeatherShieldPlus.xml" />
+    <None Remove="Content\Maps\Chests\MinorGold.xml" />
+    <None Remove="Content\Maps\Chests\SteelHelmet.xml" />
+    <None Remove="Content\Maps\Chests\LegendaryArmor.xml" />
+    <None Remove="Content\Maps\Chests\SageStaff.xml" />
+    <None Remove="Content\Maps\Chests\LegendaryShield.xml" />
+    <None Remove="Content\Maps\Chests\LegendaryClub.xml" />
+    <None Remove="Content\Maps\Chests\LegendaryBoots.xml" />
+    <None Remove="Content\Maps\Chests\PDElixir.xml" />
+    <None Remove="Content\Maps\Chests\IronShield.xml" />
+    <None Remove="Content\Maps\Chests\Magic.xml" />
+    <None Remove="Content\Maps\Chests\POElixir.xml" />
+    <None Remove="Content\Maps\Chests\PersianBlade.xml" />
+    <None Remove="Content\Maps\Chests\BronzeGear.xml" />
+    <None Remove="Content\Maps\Chests\SteelBoots.xml" />
+    <None Remove="Content\Maps\Chests\Hide.xml" />
+    <None Remove="Content\Maps\Chests\Gold.xml" />
+    <None Remove="Content\Maps\FixedCombats\GoblinsMisc3.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcMisc5.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcMisc3d.xml" />
+    <None Remove="Content\Maps\FixedCombats\BanditMisc3.xml" />
+    <None Remove="Content\Maps\FixedCombats\GoblinsMisc5.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcMisc3c.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcMisc3.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcMisc3b.xml" />
+    <None Remove="Content\Maps\FixedCombats\BanditMisc5a.xml" />
+    <None Remove="Content\Maps\FixedCombats\BanditMisc5c.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcMisc3a.xml" />
+    <None Remove="Content\Maps\FixedCombats\BanditMisc5.xml" />
+    <None Remove="Content\Maps\FixedCombats\BanditMisc5b.xml" />
+    <None Remove="Content\Maps\FixedCombats\Misc1.xml" />
+    <None Remove="Content\Maps\FixedCombats\GoblinsMisc5a.xml" />
+    <None Remove="Content\Maps\FixedCombats\BanditMasters5.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcSoldiers5.xml" />
+    <None Remove="Content\Maps\FixedCombats\BruteMasters1.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcMisc5a.xml" />
+    <None Remove="Content\Maps\FixedCombats\SirShire.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcSoldiers3.xml" />
+    <None Remove="Content\Maps\FixedCombats\Misc4.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcMisc5b.xml" />
+    <None Remove="Content\Maps\FixedCombats\Tamar.xml" />
+    <None Remove="Content\Maps\FixedCombats\Misc5.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcBrutes2.xml" />
+    <None Remove="Content\Maps\FixedCombats\BanditMinor5.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcBrutes3.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcGrunts3.xml" />
+    <None Remove="Content\Maps\FixedCombats\BanditMage3.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcBrutes1.xml" />
+    <None Remove="Content\Maps\FixedCombats\GoblinGrunts2.xml" />
+    <None Remove="Content\Maps\FixedCombats\Brutes1.xml" />
+    <None Remove="Content\Maps\FixedCombats\GoblinGrunts3.xml" />
+    <None Remove="Content\Maps\FixedCombats\BanditMage2.xml" />
+    <None Remove="Content\Maps\FixedCombats\BanditMinor2.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcBrutes5.xml" />
+    <None Remove="Content\Maps\FixedCombats\BanditMinor3.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcGrunts5.xml" />
+    <None Remove="Content\Maps\FixedCombats\BanditMage5.xml" />
+    <None Remove="Content\Maps\FixedCombats\GoblinGrunts5.xml" />
+    <None Remove="Content\Maps\FixedCombats\GoblinMages5.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcCaptains1.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcCaptains3.xml" />
+    <None Remove="Content\Maps\FixedCombats\GoblinSoldiers5.xml" />
+    <None Remove="Content\Maps\FixedCombats\GoblinMages3.xml" />
+    <None Remove="Content\Maps\FixedCombats\GoblinGrunts.xml" />
+    <None Remove="Content\Maps\FixedCombats\BanditLeaders5.xml" />
+    <None Remove="Content\Maps\FixedCombats\OrcCaptains5.xml" />
+    <None Remove="Content\Maps\FixedCombats\Goblins.xml" />
+    <None Remove="Content\Maps\Inns\SanctuaryInn.xml" />
+    <None Remove="Content\Maps\Inns\HealingInn.xml" />
+    <None Remove="Content\Maps\Inns\ThisAnInn.xml" />
+    <None Remove="Content\Maps\Inns\NewAgeInn.xml" />
+    <None Remove="Content\Maps\Stores\WhoMeShop.xml" />
+    <None Remove="Content\Maps\Stores\Gearrific.xml" />
+    <None Remove="Content\Maps\Stores\PotionsGalore.xml" />
+    <None Remove="Content\Maps\Stores\Itemania.xml" />
+    <None Remove="Content\Maps\Stores\TheWeaponsmith.xml" />
+    <None Remove="Content\Maps\Stores\GearMan.xml" />
+    <None Remove="Content\Maps\Stores\HealTheSoul.xml" />
+    <None Remove="Content\Quests\SaveMercadia.xml" />
+    <None Remove="Content\Quests\HideArmor.xml" />
+    <None Remove="Content\Quests\TheOrcCaptain.xml" />
+    <None Remove="Content\Quests\TheBanditLeader.xml" />
+    <None Remove="Content\Quests\LushVillage.xml" />
+    <None Remove="Content\Quests\TheGoblinBrigade.xml" />
+    <None Remove="Content\Quests\TestBattle.xml" />
+    <None Remove="Content\Quests\ShortSword.xml" />
+    <None Remove="Content\Quests\DefeatTamar.xml" />
+    <None Remove="Content\Quests\QuestLines\MainQuestLine.xml" />
+    <None Remove="Content\Spells\MinorHeal.xml" />
+    <None Remove="Content\Spells\MassMinorHeal.xml" />
+    <None Remove="Content\Spells\IceBolt.xml" />
+    <None Remove="Content\Spells\PDDown.xml" />
+    <None Remove="Content\Spells\PODown.xml" />
+    <None Remove="Content\Spells\IceBlast.xml" />
+    <None Remove="Content\Spells\Heal.xml" />
+    <None Remove="Content\Spells\MassFireBlast.xml" />
+    <None Remove="Content\Spells\FireBlast.xml" />
+    <None Remove="Content\Spells\MDDown.xml" />
+    <None Remove="Content\Spells\MassFireBolt.xml" />
+    <None Remove="Content\Spells\MODown.xml" />
+    <None Remove="Content\Spells\FireBolt.xml" />
+    <None Remove="Content\Spells\FireBomb.xml" />
+    <None Remove="Content\Spells\SuperHeal.xml" />
+    <None Remove="Content\Spells\MassHeal.xml" />
+    <None Remove="Content\Content.mgcb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
@@ -63,6 +350,72 @@
     <None Update="Content\GameData\Maps\Map001.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Content\Maps\Map005.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map011.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map010.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map004.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map012.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map006.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map007.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map013.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map003.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map002.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map016.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map014.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map015.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map001.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map009.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Maps\Map008.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Characters\Players\Tyjavus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Characters\Players\Kolatt.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Characters\Players\Shenidd.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Characters\Players\Vashekk.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Characters\Players\Nykkas.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Content\Quests\QuestLines\MainQuestLine.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\GameData\" />
@@ -82,5 +435,847 @@
     <Folder Include="GameClass\Quest\" />
     <Folder Include="Content\Texture\" />
     <Folder Include="Content\GameData\Maps\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Maps\Map005.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map011.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map010.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map004.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map012.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map006.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map007.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map013.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map003.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map002.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map016.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map014.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map015.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map001.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map009.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Map008.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\CharacterClasses\Wizard.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\CharacterClasses\Warrior.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\CharacterClasses\RedMage.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\CharacterClasses\Mystic.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\CharacterClasses\Paladin.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\CharacterClasses\Barbarian.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\CrimsonHood.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\OrcSoldier.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\BanditMinor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\BanditGuard.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\BruteMage.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\GoblinMage.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\GoblinGrunt.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\SirShire.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\OrcCaptain.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\Tamar.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\BanditLeader.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\BanditMage.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\BanditMaster.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\BruteMaster.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\OrcBrute.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Monsters\OrcGrunt.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Players\Tyjavus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Players\Kolatt.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Players\Shenidd.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Players\Vashekk.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\Players\Nykkas.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\Sheddarr.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\Vejnas.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\JangElder.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\Dunkum.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\Shejarr.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\ToPlotTown.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\Ekin.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\Itemania.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\Theaniv.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\Ayttas.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\HealingInn.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\Kneevan.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\ThisAnInn.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\TheWeaponSmith.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\WhoMe.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\Manny.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\Ujar.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\NewAgeInn.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Characters\QuestNPCs\HealTheSoul.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\BronzeBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LeatherArmorPlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\WornMageHood.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\HideHelmet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\ChainHelmet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\SteelShield.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\SageBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\TamarBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\HideArmor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\MageHood.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\IronHelmet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\WornRobe.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\MagicMageBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LeatherShield.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\SageHood.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LeatherHide.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\SageRobe.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\HideBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LegendaryHelmet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\TamarArmor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\BronzeHelmet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\ChainBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\BronzeArmor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LeatherHelmetPlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\TamarShield.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\MageBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\SteelArmor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\HideShield.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LegendaryHood.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LegendaryRobe.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\IronArmor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LeatherArmor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LeatherShieldPlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\WornMageBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\SteelHelmet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\IronShieldPlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\ChainShield.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\Robe.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LegendaryArmor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\MagicMageHood.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LeatherBootsPlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LegendaryShield.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LeatherBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\ChainMail.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\MagicRobe.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LeatherHelmet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\LegendaryBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\IronShield.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\TamarHelmet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\SteelBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\IronBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Armor\BronzeShield.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Items\MOElixir.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Items\MajorMagicPotion.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Items\MagicPotion.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Items\MDElixir.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Items\GlimmeringRuby.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Items\MinorHealingPotion.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Items\FireBoltScroll.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Items\MajorHealingPotion.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Items\FireBallScroll.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Items\HealingPotion.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Items\PDElixir.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Items\MinorMagicPotion.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Items\POElixir.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\LegendaryStaff.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\LongBlade.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\LegendaryBlade.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\Dagger.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\LongSword.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\SpikedClub.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\ShortSwordPlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\ClaymorePlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\BoStaff.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\MysticalStaff.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\PersianSword.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\MagicStaff.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\Claymore.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\WornStaff.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\ShortSword.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\SageStaff.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\GiantClubPlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\LegendaryClub.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\TamarBlade.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\Club.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\PersianBlade.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Gear\Weapons\GiantClub.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\MOElixir.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\MajorHealing.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\LegendaryStaff.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\SteelShield.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\LongBlade.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\Ruby.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\Healing.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\SageBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\Mage.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\MDElixir.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\LegendaryBlade.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\Dagger.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\IronHelmet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\MajorMagic.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\SageHood.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\LongSword.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\LegendaryHelmet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\MoneyBags.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\MinorMagic.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\MinorHealing.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\GoldPlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\SteelArmor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\IronGear.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\LegendaryHood.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\LegendaryRobe.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\PersianSword.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\LeatherGear.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\LeatherShieldPlus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\MinorGold.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\SteelHelmet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\LegendaryArmor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\SageStaff.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\LegendaryShield.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\LegendaryClub.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\LegendaryBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\PDElixir.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\IronShield.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\Magic.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\POElixir.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\PersianBlade.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\BronzeGear.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\SteelBoots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\Hide.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Chests\Gold.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\GoblinsMisc3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcMisc5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcMisc3d.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BanditMisc3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\GoblinsMisc5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcMisc3c.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcMisc3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcMisc3b.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BanditMisc5a.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BanditMisc5c.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcMisc3a.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BanditMisc5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BanditMisc5b.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\Misc1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\GoblinsMisc5a.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BanditMasters5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcSoldiers5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BruteMasters1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcMisc5a.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\SirShire.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcSoldiers3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\Misc4.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcMisc5b.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\Tamar.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\Misc5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcBrutes2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BanditMinor5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcBrutes3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcGrunts3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BanditMage3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcBrutes1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\GoblinGrunts2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\Brutes1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\GoblinGrunts3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BanditMage2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BanditMinor2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcBrutes5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BanditMinor3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcGrunts5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BanditMage5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\GoblinGrunts5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\GoblinMages5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcCaptains1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcCaptains3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\GoblinSoldiers5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\GoblinMages3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\GoblinGrunts.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\BanditLeaders5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\OrcCaptains5.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\FixedCombats\Goblins.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Inns\SanctuaryInn.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Inns\HealingInn.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Inns\ThisAnInn.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Inns\NewAgeInn.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Stores\WhoMeShop.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Stores\Gearrific.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Stores\PotionsGalore.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Stores\Itemania.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Stores\TheWeaponsmith.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Stores\GearMan.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Maps\Stores\HealTheSoul.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Quests\SaveMercadia.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Quests\HideArmor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Quests\TheOrcCaptain.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Quests\TheBanditLeader.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Quests\LushVillage.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Quests\TheGoblinBrigade.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Quests\TestBattle.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Quests\ShortSword.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Quests\DefeatTamar.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Quests\QuestLines\MainQuestLine.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\MinorHeal.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\MassMinorHeal.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\IceBolt.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\PDDown.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\PODown.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\IceBlast.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\Heal.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\MassFireBlast.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\FireBlast.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\MDDown.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\MassFireBolt.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\MODown.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\FireBolt.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\FireBomb.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\SuperHeal.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Spells\MassHeal.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>

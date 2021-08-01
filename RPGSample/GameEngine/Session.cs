@@ -869,6 +869,57 @@ namespace RPGSample
             TileEngine.SetMap(map, originalPortal == null ? null :
                 map.FindPortal(originalPortal.DestinationMapPortalName));
         }
+        public static void StartTestSession(ScreenManager screenManager)
+        {
+            GameStartDescription gameStartDescription = new GameStartDescription()
+            {
+                MapContentName = "Map001",
+                PlayerContentNames = new List<string>() { "Kolatt" },
+                QuestLineContentName = "MainQuestLine"
+            };
+            GameplayScreen gameplayScreen = new GameplayScreen(gameStartDescription);
+            // end any existing session
+            EndSession();
+
+            // create a new singleton
+            singleton = new Session(screenManager, gameplayScreen);
+
+            // set up the initial map
+            string mapContentName = gameStartDescription.MapContentName;
+            if (!mapContentName.StartsWith(@"Maps\"))
+            {
+                mapContentName = Path.Combine(@"Maps", mapContentName);
+            }
+
+            // check for trivial movement - typically intra-map portals
+            if ((TileEngine.Map != null) && (TileEngine.Map.AssetName == mapContentName))
+            {
+                TileEngine.SetMap(TileEngine.Map, null);
+            }
+
+            // load the map
+            ContentManager content = singleton.screenManager.Game.Content;
+            Map map = content.Load<Map>(mapContentName).Clone() as Map;
+
+
+            // modify the map based on the world changes (removed chests, etc.).
+            singleton.ModifyMap(map);
+
+            // start playing the music for the new map
+            AudioManager.PlayMusic(map.MusicCueName);
+
+            // set the new map into the tile engine
+            TileEngine.SetMap(map, null);
+
+            
+            singleton.party = new Party(gameStartDescription, content);
+
+            // load the quest line
+            singleton.questLine = content.Load<QuestLine>(
+                Path.Combine(@"Quests\QuestLines",
+                gameStartDescription.QuestLineContentName)).Clone() as QuestLine;
+
+        }
         /// <summary>
         /// Start a new session based on the data provided.
         /// </summary>
